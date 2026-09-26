@@ -1,93 +1,93 @@
-How to use: http://info.sonicretro.org/SCHG_How-to:Set_Up_SonLVL
+如何使用: http://info.sonicretro.org/SCHG_How-to:Set_Up_SonLVL
 
-Controls:
-Up, Down, Left, Right: Move the camera by 16 pixels.
-Hold Shift: Move the camera by the size of a chunk (usually 256 or 128 pixels).
-Hold Ctrl: Move the camera to the edge of the level.
-Ctrl+O: Open
-Ctrl+S: Save
-Ctrl+Z: Undo
-Ctrl+Y: Redo
-Alt+Enter: Enable/Disable fullscreen mode.
-F5: Show/Hide the menu.
-Ctrl+Tab: Switch to next tab.
-Ctrl+Shift+Tab: Switch to previous tab.
-Ctrl+1: Switch to Objects tab.
-Ctrl+2: Switch to Foreground tab.
-Ctrl+3: Switch to Background tab.
-Ctrl+4: Switch to Art tab.
-Q: Disable collision viewing.
-W: View collision path 1.
-E: View collision path 2.
-R: Toggle viewing of angle values.
-T: Toggle objects above/below high plane.
-Y: Toggle viewing of low plane.
-U: Toggle viewing of high plane.
-I: Toggle grid.
-O: Toggle HUD.
-P: Toggle viewing of objects from all timezones (Sonic CD only).
-[: View previous palette.
-]: View next palette.
--: Zoom out.
-+: Zoom in.
+控制:
+方向键: 使相机移动（16像素点）.
+shift+方向键: 使相机移动一个区块（128，256 像素点）.
+Ctrl+方向键: 移动相机到边缘.
+Ctrl+O: 打开ini
+Ctrl+S: 保存
+Ctrl+Z: 撤回
+Ctrl+Y: 重做
+Alt+Enter: 全屏幕切换
+F5: 显示/关闭菜单.
+Ctrl+Tab: 切换下一个标签页.
+Ctrl+Shift+Tab: 切换上个标签页.
+Ctrl+1: 切换到物体标签页.
+Ctrl+2: 切换到前景标签页.
+Ctrl+3: 切换到背景标签页.
+Ctrl+4: 切换到图标签页.
+Q: 取消碰撞显示.
+W: 查看碰撞(1).
+E: 查看碰撞(2).
+R: 切换角度显示.
+T: 切换高平面上/下的对象.
+Y: 切换低平面显示.
+U: 切换高平面显示.
+I: 显示/隐藏瓦片.
+O: 显示/隐藏HUD.
+P: 切换物体在所有时间是否可见 (只适用于SCD).
+[: 查看前一个调色板.
+]: 查看后一个调色板.
+-: 缩放.
++: 缩进.
 
-Object Editing:
-Left click: Select an object or ring group. Hold Ctrl to select multiple objects.
-Left click empty area, drag: Select all objects within an area.
-Left click object, drag: Move object(s).
-Double left click: Create a new object.
-Shift + Double left click: Create a new ring group.
-Ctrl + Double left click: Create a new special bumper. (Casino Night only)
-Right click: Bring up a context menu.
-Delete: Delete all selected objects.
-Numpad 12346789: Move selected objects by grid size in direction of number.
-A: Decrease type of all selected objects. (no undo)
-Z: Increase type of all selected objects. (no undo)
-S: Decrease subtype of all selected objects. (no undo)
-X: Increase subtype of all selected objects. (no undo)
-J: Increase grid size.
-M: Decrease grid size.
-Ctrl+X: Cut selected objects.
-Ctrl+C: Copy selected objects.
-Ctrl+V: Paste copied objects.
-Use the property grid on the right to edit the selected object(s)/ring group(s).
+物体(对象)编辑：
+左键点击：选择一个对象或金环群。按住 Ctrl 可以选择多个对象。
+左键点击空白区域并拖动：选择该区域内的所有对象。
+左键点击对象并拖动：移动对象。
+双击左键：创建一个新对象。
+Shift + 双击左键：创建一个新金环群。
+Ctrl + 双击左键：创建一个新的特殊缓冲器。（仅限赌场夜场景）
+右键点击：弹出上下文菜单。
+Delete：删除所有选中的对象。
+数字键盘 12346789：按数字对应方向按网格大小移动选中的对象。
+A：减少所有选中对象的类型。（不可撤销）
+Z：增加所有选中对象的类型。（不可撤销）
+S：减少所有选中对象的子类型。（不可撤销）
+X：增加所有选中对象的子类型。（不可撤销）
+J：增加网格大小。
+M：减少网格大小。
+Ctrl + X：剪切选中的对象。
+Ctrl + C：复制选中的对象。
+Ctrl + V：粘贴复制的对象。
+使用右侧的属性网格来编辑选中的对象或金环群。
 
-Level Editing:
-Left click: Draw with the selected chunk.
-In Sonic 1 mode: Double click to toggle the loop flag.
-Right click: Select the chunk under the cursor.
-Right click, drag: Select an area.
-Right click inside selected area: Open context menu.
-A: Decrease index of selected chunk.
-Z: Increase index of selected chunk.
-Use the list on the right to select a chunk.
+关卡编辑：
+左键点击：用选中的块绘制。
+在索尼克1模式下：双击切换循环标记。
+右键点击：选择光标下的块。
+右键拖动：选择区域。
+在选中区域内右键点击：打开上下文菜单。
+A：减小选中块的索引。
+Z：增加选中块的索引。
+使用右侧的列表选择块。
 
-Chunk Editing:
-Click and drag chunks in the chunk list to re-order them, hold Ctrl to swap two chunks.
-On the chunk preview:
-Page Up, Page Down, Home, End: Change current chunk.
-Up, Down, Left, Right: Change selected chunk block.
-X: Flip horizontally.
-Y: Flip vertically.
-S: Increment solidity.
-Shift+S: Decrement solidity.
-T: Increment secondary solidity (S2/S3K chunks only).
-Shift+T: Decrement secondary solidity (S2/S3K chunks only).
-B: Increment block index.
-Shift+B: Decrement block index.
+区块编辑：
+在块列表中点击并拖动区块可以重新排序，按住Ctrl可以交换两个区块。
+在区块预览上：
+Page Up, Page Down, Home, End：更改当前区块。
+上下左右：更改选中的块。
+X：水平翻转。
+Y：垂直翻转。
+S：增加硬度。
+Shift + S：减少硬度。
+T：增加次级硬度（S2/S3K）。
+Shift + T：减少次级硬度（S2/S3K）。
+B：增加区块索引。
+Shift + B：减少区块索引。
 
-Block Editing:
-Click and drag blocks in the block list to re-order them, hold Ctrl to swap two blocks.
-On the block preview:
-Page Up, Page Down, Home, End: Change current block.
-Up, Down, Left, Right: Change selected block tile.
-X: Flip horizontally.
-Y: Flip vertically.
-P: Toggle priority.
-C: Increment palette.
-Shift+C: Decrement palette.
-T: Increment tile index.
-Shift+T: Decrement tile index.
+块编辑：
+在块列表中点击并拖动块以重新排序，按住 Ctrl 可以交换两个块。
+在块预览中：
+Page Up, Page Down, Home, End：切换当前块。
+上, 下, 左, 右：切换选中的块图块。
+X：水平翻转。
+Y：垂直翻转。
+P：切换优先级。
+C：增加调色板。
+Shift + C：减少调色板。
+T：增加图块索引。
+Shift + T：减少图块索引。
 
-Tile Editing:
-Click and drag tiles in the tile list to re-order them, hold Ctrl to swap two tiles.
+图块编辑：
+在图块列表中点击并拖动图块以重新排序，按住 Ctrl 可以交换两个图块。
