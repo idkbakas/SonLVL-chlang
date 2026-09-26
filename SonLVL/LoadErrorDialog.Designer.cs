@@ -45,7 +45,7 @@
             cancelButton.Name = "cancelButton";
             cancelButton.Size = new System.Drawing.Size(75, 21);
             cancelButton.TabIndex = 1;
-            cancelButton.Text = "&取消";
+            cancelButton.Text = "取消(&C)";
             cancelButton.UseVisualStyleBackColor = true;
             cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
@@ -56,7 +56,7 @@
             reportButton.Name = "reportButton";
             reportButton.Size = new System.Drawing.Size(75, 21);
             reportButton.TabIndex = 2;
-            reportButton.Text = "&报告";
+            reportButton.Text = "报告(&R)";
             reportButton.UseVisualStyleBackColor = true;
             reportButton.Click += new System.EventHandler(this.reportButton_Click);
             // 
@@ -67,7 +67,7 @@
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(75, 21);
             button1.TabIndex = 3;
-            button1.Text = "&指南";
+            button1.Text = "指南&(G)";
             button1.UseVisualStyleBackColor = true;
             button1.Click += new System.EventHandler(this.button1_Click);
             // 

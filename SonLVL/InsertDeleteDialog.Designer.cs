@@ -45,7 +45,7 @@ namespace SonicRetro.SonLVL
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 21);
             this.okButton.TabIndex = 0;
-            this.okButton.Text = "&确定";
+            this.okButton.Text = "确定(&O)";
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
@@ -57,7 +57,7 @@ namespace SonicRetro.SonLVL
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 21);
             this.cancelButton.TabIndex = 1;
-            this.cancelButton.Text = "&取消";
+            this.cancelButton.Text = "取消(&C)";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 

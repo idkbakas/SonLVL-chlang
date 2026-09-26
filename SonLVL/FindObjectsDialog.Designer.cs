@@ -48,22 +48,22 @@ namespace SonicRetro.SonLVL
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.Location = new System.Drawing.Point(82, 227);
+            this.okButton.Location = new System.Drawing.Point(73, 227);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 21);
             this.okButton.TabIndex = 0;
-            this.okButton.Text = "&查找";
+            this.okButton.Text = "查找(&F)";
             this.okButton.UseVisualStyleBackColor = true;
             // 
             // cancelButton
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Yes;
-            this.cancelButton.Location = new System.Drawing.Point(163, 227);
+            this.cancelButton.Location = new System.Drawing.Point(154, 227);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 21);
+            this.cancelButton.Size = new System.Drawing.Size(84, 21);
             this.cancelButton.TabIndex = 1;
-            this.cancelButton.Text = "&选择所有";
+            this.cancelButton.Text = "选择所有(&S)";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // findSubtype

@@ -59,7 +59,7 @@ namespace SonicRetro.SonLVL.GUI
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 21);
             this.okButton.TabIndex = 0;
-            this.okButton.Text = "&确认";
+            this.okButton.Text = "确定(&C)";
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
@@ -71,7 +71,7 @@ namespace SonicRetro.SonLVL.GUI
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 21);
             this.cancelButton.TabIndex = 1;
-            this.cancelButton.Text = "&取消";
+            this.cancelButton.Text = "取消(&C)";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
@@ -146,9 +146,9 @@ namespace SonicRetro.SonLVL.GUI
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.TilePicture);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(24, 0);
+            this.panel3.Location = new System.Drawing.Point(32, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(270, 214);
+            this.panel3.Size = new System.Drawing.Size(262, 214);
             this.panel3.TabIndex = 10;
             // 
             // TilePicture
@@ -193,7 +193,7 @@ namespace SonicRetro.SonLVL.GUI
             this.fillToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(24, 214);
+            this.toolStrip1.Size = new System.Drawing.Size(32, 214);
             this.toolStrip1.TabIndex = 11;
             this.toolStrip1.Text = "toolStrip1";
             // 

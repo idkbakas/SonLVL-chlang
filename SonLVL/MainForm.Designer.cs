@@ -1675,7 +1675,7 @@ namespace SonicRetro.SonLVL.GUI
             this.includeobjectsWithFGToolStripMenuItem.CheckOnClick = true;
             this.includeobjectsWithFGToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.includeobjectsWithFGToolStripMenuItem.Name = "includeobjectsWithFGToolStripMenuItem";
-            this.includeobjectsWithFGToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.includeobjectsWithFGToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.includeobjectsWithFGToolStripMenuItem.Text = "涵盖前景的&物体";
             this.includeobjectsWithFGToolStripMenuItem.CheckedChanged += new System.EventHandler(this.includeObjectsWithFGToolStripMenuItem_CheckedChanged);
             // 
@@ -1683,7 +1683,7 @@ namespace SonicRetro.SonLVL.GUI
             // 
             this.hideDebugObjectsToolStripMenuItem.CheckOnClick = true;
             this.hideDebugObjectsToolStripMenuItem.Name = "hideDebugObjectsToolStripMenuItem";
-            this.hideDebugObjectsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hideDebugObjectsToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.hideDebugObjectsToolStripMenuItem.Text = "&隐藏调试模式物体";
             this.hideDebugObjectsToolStripMenuItem.CheckedChanged += new System.EventHandler(this.hideDebugObjectsToolStripMenuItem_CheckedChanged);
             // 
@@ -1691,7 +1691,7 @@ namespace SonicRetro.SonLVL.GUI
             // 
             this.objectsAboveHighPlaneToolStripMenuItem.Name = "objectsAboveHighPlaneToolStripMenuItem";
             this.objectsAboveHighPlaneToolStripMenuItem.ShortcutKeyDisplayString = "T";
-            this.objectsAboveHighPlaneToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.objectsAboveHighPlaneToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.objectsAboveHighPlaneToolStripMenuItem.Text = "&高平面物体";
             this.objectsAboveHighPlaneToolStripMenuItem.CheckedChanged += new System.EventHandler(this.objectsAboveHighPlaneToolStripMenuItem_CheckedChanged);
             this.objectsAboveHighPlaneToolStripMenuItem.Click += new System.EventHandler(this.objectsAboveHighPlaneToolStripMenuItem_Click);
@@ -1703,13 +1703,13 @@ namespace SonicRetro.SonLVL.GUI
             this.hUDToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.hUDToolStripMenuItem.Name = "hUDToolStripMenuItem";
             this.hUDToolStripMenuItem.ShortcutKeyDisplayString = "O";
-            this.hUDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hUDToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.hUDToolStripMenuItem.Text = "&HUD";
             // 
             // backgroundColorToolStripMenuItem
             // 
             this.backgroundColorToolStripMenuItem.Name = "backgroundColorToolStripMenuItem";
-            this.backgroundColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backgroundColorToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.backgroundColorToolStripMenuItem.Text = "&背景颜色";
             this.backgroundColorToolStripMenuItem.Click += new System.EventHandler(this.backgroundColorToolStripMenuItem_Click);
             // 
@@ -1717,7 +1717,7 @@ namespace SonicRetro.SonLVL.GUI
             // 
             this.invertColorsToolStripMenuItem.CheckOnClick = true;
             this.invertColorsToolStripMenuItem.Name = "invertColorsToolStripMenuItem";
-            this.invertColorsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.invertColorsToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.invertColorsToolStripMenuItem.Text = "颜色反&转";
             this.invertColorsToolStripMenuItem.Click += new System.EventHandler(this.invertColorsToolStripMenuItem_Click);
             // 
@@ -1727,7 +1727,7 @@ namespace SonicRetro.SonLVL.GUI
             this.selectPaletteToolStripMenuItem,
             this.setPositionToolStripMenuItem});
             this.waterPaletteToolStripMenuItem.Name = "waterPaletteToolStripMenuItem";
-            this.waterPaletteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.waterPaletteToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.waterPaletteToolStripMenuItem.Text = "&调色板(水)";
             this.waterPaletteToolStripMenuItem.Visible = false;
             // 
@@ -1751,7 +1751,7 @@ namespace SonicRetro.SonLVL.GUI
             this.lowToolStripMenuItem,
             this.highToolStripMenuItem});
             this.layersToolStripMenuItem.Name = "layersToolStripMenuItem";
-            this.layersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.layersToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.layersToolStripMenuItem.Text = "&层";
             // 
             // lowToolStripMenuItem
@@ -1787,7 +1787,7 @@ namespace SonicRetro.SonLVL.GUI
             this.toolStripSeparator6,
             this.anglesToolStripMenuItem});
             this.collisionToolStripMenuItem.Name = "collisionToolStripMenuItem";
-            this.collisionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.collisionToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.collisionToolStripMenuItem.Text = "&碰撞";
             this.collisionToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.collisionToolStripMenuItem_DropDownItemClicked);
             // 
@@ -1834,7 +1834,7 @@ namespace SonicRetro.SonLVL.GUI
             this.allToolStripMenuItem});
             this.timeZoneToolStripMenuItem.Name = "timeZoneToolStripMenuItem";
             this.timeZoneToolStripMenuItem.ShortcutKeyDisplayString = "P";
-            this.timeZoneToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.timeZoneToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.timeZoneToolStripMenuItem.Text = "&时区";
             this.timeZoneToolStripMenuItem.Visible = false;
             // 
@@ -1860,7 +1860,7 @@ namespace SonicRetro.SonLVL.GUI
             this.enableGridToolStripMenuItem,
             this.gridColorToolStripMenuItem});
             this.gridToolStripMenuItem.Name = "gridToolStripMenuItem";
-            this.gridToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gridToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.gridToolStripMenuItem.Text = "&网格";
             // 
             // enableGridToolStripMenuItem
@@ -1891,7 +1891,7 @@ namespace SonicRetro.SonLVL.GUI
             this.xToolStripMenuItem5});
             this.zoomToolStripMenuItem.Name = "zoomToolStripMenuItem";
             this.zoomToolStripMenuItem.ShortcutKeyDisplayString = "+ -";
-            this.zoomToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.zoomToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.zoomToolStripMenuItem.Text = "&缩放";
             this.zoomToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.zoomToolStripMenuItem_DropDownItemClicked);
             // 
@@ -1948,20 +1948,20 @@ namespace SonicRetro.SonLVL.GUI
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(175, 6);
             // 
             // usageCountsToolStripMenuItem
             // 
             this.usageCountsToolStripMenuItem.Enabled = false;
             this.usageCountsToolStripMenuItem.Name = "usageCountsToolStripMenuItem";
-            this.usageCountsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usageCountsToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.usageCountsToolStripMenuItem.Text = "&使用次数";
             this.usageCountsToolStripMenuItem.Click += new System.EventHandler(this.usageCountsToolStripMenuItem_Click);
             // 
             // logToolStripMenuItem
             // 
             this.logToolStripMenuItem.Name = "logToolStripMenuItem";
-            this.logToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.logToolStripMenuItem.Text = "&日志";
             this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
             // 
@@ -2140,21 +2140,21 @@ namespace SonicRetro.SonLVL.GUI
             // 
             this.viewReadmeToolStripMenuItem.Name = "viewReadmeToolStripMenuItem";
             this.viewReadmeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.viewReadmeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewReadmeToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.viewReadmeToolStripMenuItem.Text = "&读我";
             this.viewReadmeToolStripMenuItem.Click += new System.EventHandler(this.viewReadmeToolStripMenuItem_Click);
             // 
             // reportBugToolStripMenuItem
             // 
             this.reportBugToolStripMenuItem.Name = "reportBugToolStripMenuItem";
-            this.reportBugToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reportBugToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.reportBugToolStripMenuItem.Text = "报告&Bug";
             this.reportBugToolStripMenuItem.Click += new System.EventHandler(this.reportBugToolStripMenuItem_Click);
             // 
             // VersionToolStripMenuItem
             // 
             this.VersionToolStripMenuItem.Name = "VersionToolStripMenuItem";
-            this.VersionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.VersionToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.VersionToolStripMenuItem.Text = "版&本";
             this.VersionToolStripMenuItem.Click += new System.EventHandler(this.VersionStripMenuItem_Click);
             // 
@@ -2178,91 +2178,91 @@ namespace SonicRetro.SonLVL.GUI
             this.selectAllObjectsToolStripMenuItem,
             this.selectAllRingsToolStripMenuItem});
             this.objectContextMenuStrip.Name = "contextMenuStrip1";
-            this.objectContextMenuStrip.Size = new System.Drawing.Size(199, 230);
+            this.objectContextMenuStrip.Size = new System.Drawing.Size(168, 230);
             // 
             // addObjectToolStripMenuItem
             // 
             this.addObjectToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.mon;
             this.addObjectToolStripMenuItem.Name = "addObjectToolStripMenuItem";
-            this.addObjectToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.addObjectToolStripMenuItem.Text = "Add &Object...";
+            this.addObjectToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.addObjectToolStripMenuItem.Text = "添加物体(&O)";
             this.addObjectToolStripMenuItem.Click += new System.EventHandler(this.addObjectToolStripMenuItem_Click);
             // 
             // addRingToolStripMenuItem
             // 
             this.addRingToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.rng;
             this.addRingToolStripMenuItem.Name = "addRingToolStripMenuItem";
-            this.addRingToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.addRingToolStripMenuItem.Text = "Add &Ring...";
+            this.addRingToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.addRingToolStripMenuItem.Text = "添加金环(&R)";
             this.addRingToolStripMenuItem.Click += new System.EventHandler(this.addRingToolStripMenuItem_Click);
             // 
             // addGroupOfObjectsToolStripMenuItem
             // 
             this.addGroupOfObjectsToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.mon;
             this.addGroupOfObjectsToolStripMenuItem.Name = "addGroupOfObjectsToolStripMenuItem";
-            this.addGroupOfObjectsToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.addGroupOfObjectsToolStripMenuItem.Text = "Add Group of O&bjects...";
+            this.addGroupOfObjectsToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.addGroupOfObjectsToolStripMenuItem.Text = "添加一组物体(&B)";
             this.addGroupOfObjectsToolStripMenuItem.Click += new System.EventHandler(this.addGroupOfObjectsToolStripMenuItem_Click);
             // 
             // addGroupOfRingsToolStripMenuItem
             // 
             this.addGroupOfRingsToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.rng;
             this.addGroupOfRingsToolStripMenuItem.Name = "addGroupOfRingsToolStripMenuItem";
-            this.addGroupOfRingsToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.addGroupOfRingsToolStripMenuItem.Text = "Add Group of R&ings...";
+            this.addGroupOfRingsToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.addGroupOfRingsToolStripMenuItem.Text = "添加一组金环(&I)";
             this.addGroupOfRingsToolStripMenuItem.Click += new System.EventHandler(this.addGroupOfRingsToolStripMenuItem_Click);
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.cut;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.cutToolStripMenuItem.Text = "Cu&t";
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.cutToolStripMenuItem.Text = "剪切(&T)";
             this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.copy;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.copyToolStripMenuItem.Text = "&Copy";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.copyToolStripMenuItem.Text = "复制(&C)";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.paste;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.pasteToolStripMenuItem.Text = "&Paste";
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.pasteToolStripMenuItem.Text = "粘贴(&P)";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.delete;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.deleteToolStripMenuItem.Text = "&Delete";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.deleteToolStripMenuItem.Text = "删除(&D)";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(195, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(164, 6);
             // 
             // selectAllObjectsToolStripMenuItem
             // 
             this.selectAllObjectsToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.mon;
             this.selectAllObjectsToolStripMenuItem.Name = "selectAllObjectsToolStripMenuItem";
-            this.selectAllObjectsToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.selectAllObjectsToolStripMenuItem.Text = "&Select All Objects";
+            this.selectAllObjectsToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.selectAllObjectsToolStripMenuItem.Text = "选择所有物体(&S)";
             this.selectAllObjectsToolStripMenuItem.Click += new System.EventHandler(this.selectAllObjectsToolStripMenuItem_Click);
             // 
             // selectAllRingsToolStripMenuItem
             // 
             this.selectAllRingsToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.rng;
             this.selectAllRingsToolStripMenuItem.Name = "selectAllRingsToolStripMenuItem";
-            this.selectAllRingsToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.selectAllRingsToolStripMenuItem.Text = "S&elect All Rings";
+            this.selectAllRingsToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.selectAllRingsToolStripMenuItem.Text = "选择所有金环(&E)";
             this.selectAllRingsToolStripMenuItem.Click += new System.EventHandler(this.selectAllRingsToolStripMenuItem_Click);
             // 
             // ObjectProperties

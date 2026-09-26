@@ -38,11 +38,11 @@ namespace SonicRetro.SonLVL.GUI
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.okButton.Location = new System.Drawing.Point(96, 170);
+            this.okButton.Location = new System.Drawing.Point(100, 197);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 21);
+            this.okButton.Size = new System.Drawing.Size(88, 21);
             this.okButton.TabIndex = 0;
-            this.okButton.Text = "&继续编辑";
+            this.okButton.Text = "继续编辑(&C)";
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
@@ -50,22 +50,22 @@ namespace SonicRetro.SonLVL.GUI
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(177, 170);
+            this.cancelButton.Location = new System.Drawing.Point(203, 197);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 21);
             this.cancelButton.TabIndex = 1;
-            this.cancelButton.Text = "&退出";
+            this.cancelButton.Text = "退出(&Q)";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(15, 170);
+            this.button1.Location = new System.Drawing.Point(6, 197);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 21);
+            this.button1.Size = new System.Drawing.Size(80, 21);
             this.button1.TabIndex = 2;
-            this.button1.Text = "发送报告";
+            this.button1.Text = "发送报告(&R)";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -82,7 +82,7 @@ namespace SonicRetro.SonLVL.GUI
             this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 202);
+            this.ClientSize = new System.Drawing.Size(290, 229);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cancelButton);

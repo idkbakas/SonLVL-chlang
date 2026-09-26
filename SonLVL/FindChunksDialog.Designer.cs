@@ -90,7 +90,7 @@ namespace SonicRetro.SonLVL
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 21);
             this.cancelButton.TabIndex = 9;
-            this.cancelButton.Text = "&计数";
+            this.cancelButton.Text = "计数(&C)";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // okButton
@@ -101,7 +101,7 @@ namespace SonicRetro.SonLVL
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 21);
             this.okButton.TabIndex = 8;
-            this.okButton.Text = "&查找";
+            this.okButton.Text = "查找(&F)";
             this.okButton.UseVisualStyleBackColor = true;
             // 
             // FindChunksDialog

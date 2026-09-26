@@ -111,7 +111,7 @@
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(82, 22);
             this.okButton.TabIndex = 20;
-            this.okButton.Text = "&确认";
+            this.okButton.Text = "确定(&O)";
             this.okButton.UseVisualStyleBackColor = true;
             // 
             // cancelButton
@@ -123,7 +123,7 @@
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(82, 22);
             this.cancelButton.TabIndex = 21;
-            this.cancelButton.Text = "取消";
+            this.cancelButton.Text = "取消(&C)";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // customColorBox
@@ -145,7 +145,7 @@
             this.colorChange.Name = "colorChange";
             this.colorChange.Size = new System.Drawing.Size(74, 22);
             this.colorChange.TabIndex = 11;
-            this.colorChange.Text = "&更改";
+            this.colorChange.Text = "更改(&C)";
             this.colorChange.UseVisualStyleBackColor = true;
             this.colorChange.Click += new System.EventHandler(this.customColor_Click);
             // 

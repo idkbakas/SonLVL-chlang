@@ -51,7 +51,7 @@ namespace SonicRetro.SonLVL
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 12);
             this.label2.TabIndex = 5;
-            this.label2.Text = "版本 1          修订 4";
+            this.label2.Text = "版本 1          修订 5";
             // 
             // label3
             // 
@@ -71,7 +71,7 @@ namespace SonicRetro.SonLVL
             this.label4.TabIndex = 7;
             this.label4.Text = "By MainMemory        汉化:东风谷早苗";
             // 
-            // Form1
+            // Version
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -84,7 +84,7 @@ namespace SonicRetro.SonLVL
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Version";
             this.ShowIcon = false;
             this.Text = "版本";
             this.ResumeLayout(false);
