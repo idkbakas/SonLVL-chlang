@@ -499,8 +499,8 @@ namespace SonicRetro.SonLVL.GUI
             this.importChunksToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.importChunksToolStripButton.Enabled = false;
             this.importChunksToolStripButton.Name = "importChunksToolStripButton";
-            this.importChunksToolStripButton.Size = new System.Drawing.Size(56, 22);
-            this.importChunksToolStripButton.Text = "Import...";
+            this.importChunksToolStripButton.Size = new System.Drawing.Size(37, 22);
+            this.importChunksToolStripButton.Text = "导入";
             this.importChunksToolStripButton.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
             // drawChunkToolStripButton
@@ -508,8 +508,8 @@ namespace SonicRetro.SonLVL.GUI
             this.drawChunkToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.drawChunkToolStripButton.Enabled = false;
             this.drawChunkToolStripButton.Name = "drawChunkToolStripButton";
-            this.drawChunkToolStripButton.Size = new System.Drawing.Size(47, 22);
-            this.drawChunkToolStripButton.Text = "Draw...";
+            this.drawChunkToolStripButton.Size = new System.Drawing.Size(37, 22);
+            this.drawChunkToolStripButton.Text = "画图";
             this.drawChunkToolStripButton.Click += new System.EventHandler(this.drawToolStripButton_Click);
             // 
             // deleteUnusedChunksToolStripButton
@@ -517,8 +517,8 @@ namespace SonicRetro.SonLVL.GUI
             this.deleteUnusedChunksToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.deleteUnusedChunksToolStripButton.Enabled = false;
             this.deleteUnusedChunksToolStripButton.Name = "deleteUnusedChunksToolStripButton";
-            this.deleteUnusedChunksToolStripButton.Size = new System.Drawing.Size(87, 22);
-            this.deleteUnusedChunksToolStripButton.Text = "Delete Unused";
+            this.deleteUnusedChunksToolStripButton.Size = new System.Drawing.Size(97, 22);
+            this.deleteUnusedChunksToolStripButton.Text = "删除未使用(的)";
             this.deleteUnusedChunksToolStripButton.Click += new System.EventHandler(this.deleteUnusedChunksToolStripButton_Click);
             // 
             // removeDuplicateChunksToolStripButton
@@ -526,8 +526,8 @@ namespace SonicRetro.SonLVL.GUI
             this.removeDuplicateChunksToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.removeDuplicateChunksToolStripButton.Enabled = false;
             this.removeDuplicateChunksToolStripButton.Name = "removeDuplicateChunksToolStripButton";
-            this.removeDuplicateChunksToolStripButton.Size = new System.Drawing.Size(112, 22);
-            this.removeDuplicateChunksToolStripButton.Text = "Remove Duplicates";
+            this.removeDuplicateChunksToolStripButton.Size = new System.Drawing.Size(76, 22);
+            this.removeDuplicateChunksToolStripButton.Text = "移除重复项";
             this.removeDuplicateChunksToolStripButton.Click += new System.EventHandler(this.removeDuplicateChunksToolStripButton_Click);
             // 
             // replaceChunkBlocksToolStripButton
@@ -535,8 +535,8 @@ namespace SonicRetro.SonLVL.GUI
             this.replaceChunkBlocksToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.replaceChunkBlocksToolStripButton.Enabled = false;
             this.replaceChunkBlocksToolStripButton.Name = "replaceChunkBlocksToolStripButton";
-            this.replaceChunkBlocksToolStripButton.Size = new System.Drawing.Size(52, 22);
-            this.replaceChunkBlocksToolStripButton.Text = "Replace";
+            this.replaceChunkBlocksToolStripButton.Size = new System.Drawing.Size(37, 22);
+            this.replaceChunkBlocksToolStripButton.Text = "替换";
             this.replaceChunkBlocksToolStripButton.Click += new System.EventHandler(this.replaceChunkBlocksToolStripButton_Click);
             // 
             // remapChunksButton
@@ -545,8 +545,8 @@ namespace SonicRetro.SonLVL.GUI
             this.remapChunksButton.Enabled = false;
             this.remapChunksButton.Image = ((System.Drawing.Image)(resources.GetObject("remapChunksButton.Image")));
             this.remapChunksButton.Name = "remapChunksButton";
-            this.remapChunksButton.Size = new System.Drawing.Size(137, 19);
-            this.remapChunksButton.Text = "Advanced Remapping...";
+            this.remapChunksButton.Size = new System.Drawing.Size(84, 22);
+            this.remapChunksButton.Text = "重映射(高级)";
             this.remapChunksButton.Click += new System.EventHandler(this.remapChunksButton_Click);
             // 
             // enableDraggingChunksButton
@@ -557,8 +557,8 @@ namespace SonicRetro.SonLVL.GUI
             this.enableDraggingChunksButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.enableDraggingChunksButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.enableDraggingChunksButton.Name = "enableDraggingChunksButton";
-            this.enableDraggingChunksButton.Size = new System.Drawing.Size(98, 19);
-            this.enableDraggingChunksButton.Text = "Enable Dragging";
+            this.enableDraggingChunksButton.Size = new System.Drawing.Size(63, 22);
+            this.enableDraggingChunksButton.Text = "开启拖拽";
             // 
             // blockListToolStrip
             // 
@@ -582,8 +582,8 @@ namespace SonicRetro.SonLVL.GUI
             this.importBlocksToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.importBlocksToolStripButton.Enabled = false;
             this.importBlocksToolStripButton.Name = "importBlocksToolStripButton";
-            this.importBlocksToolStripButton.Size = new System.Drawing.Size(56, 22);
-            this.importBlocksToolStripButton.Text = "Import...";
+            this.importBlocksToolStripButton.Size = new System.Drawing.Size(37, 22);
+            this.importBlocksToolStripButton.Text = "导入";
             this.importBlocksToolStripButton.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
             // drawBlockToolStripButton
@@ -591,8 +591,8 @@ namespace SonicRetro.SonLVL.GUI
             this.drawBlockToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.drawBlockToolStripButton.Enabled = false;
             this.drawBlockToolStripButton.Name = "drawBlockToolStripButton";
-            this.drawBlockToolStripButton.Size = new System.Drawing.Size(47, 22);
-            this.drawBlockToolStripButton.Text = "Draw...";
+            this.drawBlockToolStripButton.Size = new System.Drawing.Size(37, 22);
+            this.drawBlockToolStripButton.Text = "画图";
             this.drawBlockToolStripButton.Click += new System.EventHandler(this.drawToolStripButton_Click);
             // 
             // deleteUnusedBlocksToolStripButton
@@ -600,8 +600,8 @@ namespace SonicRetro.SonLVL.GUI
             this.deleteUnusedBlocksToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.deleteUnusedBlocksToolStripButton.Enabled = false;
             this.deleteUnusedBlocksToolStripButton.Name = "deleteUnusedBlocksToolStripButton";
-            this.deleteUnusedBlocksToolStripButton.Size = new System.Drawing.Size(87, 22);
-            this.deleteUnusedBlocksToolStripButton.Text = "Delete Unused";
+            this.deleteUnusedBlocksToolStripButton.Size = new System.Drawing.Size(97, 22);
+            this.deleteUnusedBlocksToolStripButton.Text = "删除未使用(的)";
             this.deleteUnusedBlocksToolStripButton.Click += new System.EventHandler(this.deleteUnusedBlocksToolStripButton_Click);
             // 
             // removeDuplicateBlocksToolStripButton
@@ -609,8 +609,8 @@ namespace SonicRetro.SonLVL.GUI
             this.removeDuplicateBlocksToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.removeDuplicateBlocksToolStripButton.Enabled = false;
             this.removeDuplicateBlocksToolStripButton.Name = "removeDuplicateBlocksToolStripButton";
-            this.removeDuplicateBlocksToolStripButton.Size = new System.Drawing.Size(112, 22);
-            this.removeDuplicateBlocksToolStripButton.Text = "Remove Duplicates";
+            this.removeDuplicateBlocksToolStripButton.Size = new System.Drawing.Size(76, 22);
+            this.removeDuplicateBlocksToolStripButton.Text = "移除重复项";
             this.removeDuplicateBlocksToolStripButton.Click += new System.EventHandler(this.removeDuplicateBlocksToolStripButton_Click);
             // 
             // replaceBlockTilesToolStripButton
@@ -618,8 +618,8 @@ namespace SonicRetro.SonLVL.GUI
             this.replaceBlockTilesToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.replaceBlockTilesToolStripButton.Enabled = false;
             this.replaceBlockTilesToolStripButton.Name = "replaceBlockTilesToolStripButton";
-            this.replaceBlockTilesToolStripButton.Size = new System.Drawing.Size(52, 22);
-            this.replaceBlockTilesToolStripButton.Text = "Replace";
+            this.replaceBlockTilesToolStripButton.Size = new System.Drawing.Size(37, 22);
+            this.replaceBlockTilesToolStripButton.Text = "替换";
             this.replaceBlockTilesToolStripButton.Click += new System.EventHandler(this.replaceBlockTilesToolStripButton_Click);
             // 
             // remapBlocksButton
@@ -628,8 +628,8 @@ namespace SonicRetro.SonLVL.GUI
             this.remapBlocksButton.Enabled = false;
             this.remapBlocksButton.Image = ((System.Drawing.Image)(resources.GetObject("remapBlocksButton.Image")));
             this.remapBlocksButton.Name = "remapBlocksButton";
-            this.remapBlocksButton.Size = new System.Drawing.Size(137, 19);
-            this.remapBlocksButton.Text = "Advanced Remapping...";
+            this.remapBlocksButton.Size = new System.Drawing.Size(84, 22);
+            this.remapBlocksButton.Text = "重映射(高级)";
             this.remapBlocksButton.Click += new System.EventHandler(this.remapBlocksButton_Click);
             // 
             // enableDraggingBlocksButton
@@ -640,8 +640,8 @@ namespace SonicRetro.SonLVL.GUI
             this.enableDraggingBlocksButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.enableDraggingBlocksButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.enableDraggingBlocksButton.Name = "enableDraggingBlocksButton";
-            this.enableDraggingBlocksButton.Size = new System.Drawing.Size(98, 19);
-            this.enableDraggingBlocksButton.Text = "Enable Dragging";
+            this.enableDraggingBlocksButton.Size = new System.Drawing.Size(63, 22);
+            this.enableDraggingBlocksButton.Text = "开启拖拽";
             // 
             // tileListToolStrip
             // 
@@ -664,8 +664,8 @@ namespace SonicRetro.SonLVL.GUI
             this.importTilesToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.importTilesToolStripButton.Enabled = false;
             this.importTilesToolStripButton.Name = "importTilesToolStripButton";
-            this.importTilesToolStripButton.Size = new System.Drawing.Size(56, 22);
-            this.importTilesToolStripButton.Text = "Import...";
+            this.importTilesToolStripButton.Size = new System.Drawing.Size(37, 22);
+            this.importTilesToolStripButton.Text = "导入";
             this.importTilesToolStripButton.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
             // 
             // drawTileToolStripButton
@@ -673,8 +673,8 @@ namespace SonicRetro.SonLVL.GUI
             this.drawTileToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.drawTileToolStripButton.Enabled = false;
             this.drawTileToolStripButton.Name = "drawTileToolStripButton";
-            this.drawTileToolStripButton.Size = new System.Drawing.Size(47, 22);
-            this.drawTileToolStripButton.Text = "Draw...";
+            this.drawTileToolStripButton.Size = new System.Drawing.Size(37, 22);
+            this.drawTileToolStripButton.Text = "画图";
             this.drawTileToolStripButton.Click += new System.EventHandler(this.drawToolStripButton_Click);
             // 
             // deleteUnusedTilesToolStripButton
@@ -682,8 +682,8 @@ namespace SonicRetro.SonLVL.GUI
             this.deleteUnusedTilesToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.deleteUnusedTilesToolStripButton.Enabled = false;
             this.deleteUnusedTilesToolStripButton.Name = "deleteUnusedTilesToolStripButton";
-            this.deleteUnusedTilesToolStripButton.Size = new System.Drawing.Size(87, 22);
-            this.deleteUnusedTilesToolStripButton.Text = "Delete Unused";
+            this.deleteUnusedTilesToolStripButton.Size = new System.Drawing.Size(97, 22);
+            this.deleteUnusedTilesToolStripButton.Text = "删除未使用(的)";
             this.deleteUnusedTilesToolStripButton.Click += new System.EventHandler(this.deleteUnusedTilesToolStripButton_Click);
             // 
             // removeDuplicateTilesToolStripButton
@@ -691,8 +691,8 @@ namespace SonicRetro.SonLVL.GUI
             this.removeDuplicateTilesToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.removeDuplicateTilesToolStripButton.Enabled = false;
             this.removeDuplicateTilesToolStripButton.Name = "removeDuplicateTilesToolStripButton";
-            this.removeDuplicateTilesToolStripButton.Size = new System.Drawing.Size(112, 22);
-            this.removeDuplicateTilesToolStripButton.Text = "Remove Duplicates";
+            this.removeDuplicateTilesToolStripButton.Size = new System.Drawing.Size(76, 22);
+            this.removeDuplicateTilesToolStripButton.Text = "移除重复项";
             this.removeDuplicateTilesToolStripButton.Click += new System.EventHandler(this.removeDuplicateTilesToolStripButton_Click);
             // 
             // remapTilesButton
@@ -701,8 +701,8 @@ namespace SonicRetro.SonLVL.GUI
             this.remapTilesButton.Enabled = false;
             this.remapTilesButton.Image = ((System.Drawing.Image)(resources.GetObject("remapTilesButton.Image")));
             this.remapTilesButton.Name = "remapTilesButton";
-            this.remapTilesButton.Size = new System.Drawing.Size(137, 22);
-            this.remapTilesButton.Text = "Advanced Remapping...";
+            this.remapTilesButton.Size = new System.Drawing.Size(84, 22);
+            this.remapTilesButton.Text = "重映射(高级)";
             this.remapTilesButton.Click += new System.EventHandler(this.remapTilesButton_Click);
             // 
             // enableDraggingTilesButton
@@ -713,8 +713,8 @@ namespace SonicRetro.SonLVL.GUI
             this.enableDraggingTilesButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.enableDraggingTilesButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.enableDraggingTilesButton.Name = "enableDraggingTilesButton";
-            this.enableDraggingTilesButton.Size = new System.Drawing.Size(98, 19);
-            this.enableDraggingTilesButton.Text = "Enable Dragging";
+            this.enableDraggingTilesButton.Size = new System.Drawing.Size(63, 22);
+            this.enableDraggingTilesButton.Text = "开启拖拽";
             // 
             // tabControl2
             // 
@@ -2898,7 +2898,7 @@ namespace SonicRetro.SonLVL.GUI
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage12.Size = new System.Drawing.Size(504, 468);
             this.tabPage12.TabIndex = 0;
-            this.tabPage12.Text = "Chunks";
+            this.tabPage12.Text = "区块";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
             // tabPage13
@@ -2910,7 +2910,7 @@ namespace SonicRetro.SonLVL.GUI
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage13.Size = new System.Drawing.Size(504, 468);
             this.tabPage13.TabIndex = 1;
-            this.tabPage13.Text = "Blocks";
+            this.tabPage13.Text = "块";
             this.tabPage13.UseVisualStyleBackColor = true;
             // 
             // BlockSelector
@@ -2947,7 +2947,7 @@ namespace SonicRetro.SonLVL.GUI
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage14.Size = new System.Drawing.Size(504, 468);
             this.tabPage14.TabIndex = 2;
-            this.tabPage14.Text = "Tiles";
+            this.tabPage14.Text = "瓷砖/瓦片";
             this.tabPage14.UseVisualStyleBackColor = true;
             // 
             // TileSelector
@@ -2983,7 +2983,7 @@ namespace SonicRetro.SonLVL.GUI
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(504, 468);
             this.tabPage5.TabIndex = 3;
-            this.tabPage5.Text = "Solids";
+            this.tabPage5.Text = "固体(???)";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // CollisionSelector
@@ -3156,104 +3156,104 @@ namespace SonicRetro.SonLVL.GUI
             this.insertAfterToolStripMenuItem,
             this.deleteTilesToolStripMenuItem});
             this.tileContextMenuStrip.Name = "contextMenuStrip1";
-            this.tileContextMenuStrip.Size = new System.Drawing.Size(148, 290);
+            this.tileContextMenuStrip.Size = new System.Drawing.Size(144, 290);
             // 
             // cutTilesToolStripMenuItem
             // 
             this.cutTilesToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.cut;
             this.cutTilesToolStripMenuItem.Name = "cutTilesToolStripMenuItem";
-            this.cutTilesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.cutTilesToolStripMenuItem.Text = "Cu&t";
+            this.cutTilesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.cutTilesToolStripMenuItem.Text = "剪切(&T)";
             this.cutTilesToolStripMenuItem.Click += new System.EventHandler(this.cutTilesToolStripMenuItem_Click);
             // 
             // copyTilesToolStripMenuItem
             // 
             this.copyTilesToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.copy;
             this.copyTilesToolStripMenuItem.Name = "copyTilesToolStripMenuItem";
-            this.copyTilesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.copyTilesToolStripMenuItem.Text = "&Copy";
+            this.copyTilesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.copyTilesToolStripMenuItem.Text = "复制(&C)";
             this.copyTilesToolStripMenuItem.Click += new System.EventHandler(this.copyTilesToolStripMenuItem_Click);
             // 
             // deepCopyToolStripMenuItem
             // 
             this.deepCopyToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.copy;
             this.deepCopyToolStripMenuItem.Name = "deepCopyToolStripMenuItem";
-            this.deepCopyToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.deepCopyToolStripMenuItem.Text = "Deep Co&py";
+            this.deepCopyToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.deepCopyToolStripMenuItem.Text = "深度复制(&P)";
             this.deepCopyToolStripMenuItem.Click += new System.EventHandler(this.deepCopyToolStripMenuItem_Click);
             // 
             // pasteBeforeToolStripMenuItem
             // 
             this.pasteBeforeToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.paste;
             this.pasteBeforeToolStripMenuItem.Name = "pasteBeforeToolStripMenuItem";
-            this.pasteBeforeToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.pasteBeforeToolStripMenuItem.Text = "Paste &Before";
+            this.pasteBeforeToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.pasteBeforeToolStripMenuItem.Text = "粘贴(以前&B)";
             this.pasteBeforeToolStripMenuItem.Click += new System.EventHandler(this.pasteBeforeToolStripMenuItem_Click);
             // 
             // pasteOverToolStripMenuItem
             // 
             this.pasteOverToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.paste;
             this.pasteOverToolStripMenuItem.Name = "pasteOverToolStripMenuItem";
-            this.pasteOverToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.pasteOverToolStripMenuItem.Text = "Paste &Over";
+            this.pasteOverToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.pasteOverToolStripMenuItem.Text = "粘贴(覆盖&O)";
             this.pasteOverToolStripMenuItem.Click += new System.EventHandler(this.pasteOverToolStripMenuItem_Click);
             // 
             // pasteAfterToolStripMenuItem
             // 
             this.pasteAfterToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.paste;
             this.pasteAfterToolStripMenuItem.Name = "pasteAfterToolStripMenuItem";
-            this.pasteAfterToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.pasteAfterToolStripMenuItem.Text = "Paste &After";
+            this.pasteAfterToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.pasteAfterToolStripMenuItem.Text = "粘贴(以后&A)";
             this.pasteAfterToolStripMenuItem.Click += new System.EventHandler(this.pasteAfterToolStripMenuItem_Click);
             // 
             // importOverToolStripMenuItem
             // 
             this.importOverToolStripMenuItem.Name = "importOverToolStripMenuItem";
-            this.importOverToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.importOverToolStripMenuItem.Text = "&Import Over...";
+            this.importOverToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.importOverToolStripMenuItem.Text = "导入(覆盖&I)";
             this.importOverToolStripMenuItem.Click += new System.EventHandler(this.importOverToolStripMenuItem_Click);
             // 
             // drawOverToolStripMenuItem
             // 
             this.drawOverToolStripMenuItem.Name = "drawOverToolStripMenuItem";
-            this.drawOverToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.drawOverToolStripMenuItem.Text = "Draw Over...";
+            this.drawOverToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.drawOverToolStripMenuItem.Text = "覆盖(&D)";
             this.drawOverToolStripMenuItem.Click += new System.EventHandler(this.drawOverToolStripMenuItem_Click);
             // 
             // exportTileToolStripMenuItem
             // 
             this.exportTileToolStripMenuItem.Name = "exportTileToolStripMenuItem";
-            this.exportTileToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.exportTileToolStripMenuItem.Text = "E&xport...";
+            this.exportTileToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.exportTileToolStripMenuItem.Text = "导出(&X)";
             this.exportTileToolStripMenuItem.Click += new System.EventHandler(this.ExportTileToolStripMenuItem_Click);
             // 
             // duplicateTilesToolStripMenuItem
             // 
             this.duplicateTilesToolStripMenuItem.Name = "duplicateTilesToolStripMenuItem";
-            this.duplicateTilesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.duplicateTilesToolStripMenuItem.Text = "D&uplicate";
+            this.duplicateTilesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.duplicateTilesToolStripMenuItem.Text = "拷贝(&U)";
             this.duplicateTilesToolStripMenuItem.Click += new System.EventHandler(this.duplicateTilesToolStripMenuItem_Click);
             // 
             // insertBeforeToolStripMenuItem
             // 
             this.insertBeforeToolStripMenuItem.Name = "insertBeforeToolStripMenuItem";
-            this.insertBeforeToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.insertBeforeToolStripMenuItem.Text = "Insert B&efore";
+            this.insertBeforeToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.insertBeforeToolStripMenuItem.Text = "插入(以前&E)";
             this.insertBeforeToolStripMenuItem.Click += new System.EventHandler(this.insertBeforeToolStripMenuItem_Click);
             // 
             // insertAfterToolStripMenuItem
             // 
             this.insertAfterToolStripMenuItem.Name = "insertAfterToolStripMenuItem";
-            this.insertAfterToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.insertAfterToolStripMenuItem.Text = "Insert A&fter";
+            this.insertAfterToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.insertAfterToolStripMenuItem.Text = "插入(以后&F)";
             this.insertAfterToolStripMenuItem.Click += new System.EventHandler(this.insertAfterToolStripMenuItem_Click);
             // 
             // deleteTilesToolStripMenuItem
             // 
             this.deleteTilesToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.delete;
             this.deleteTilesToolStripMenuItem.Name = "deleteTilesToolStripMenuItem";
-            this.deleteTilesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.deleteTilesToolStripMenuItem.Text = "&Delete";
+            this.deleteTilesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.deleteTilesToolStripMenuItem.Text = "删除(&D)";
             this.deleteTilesToolStripMenuItem.Click += new System.EventHandler(this.deleteTilesToolStripMenuItem_Click);
             // 
             // layoutContextMenuStrip
@@ -3276,119 +3276,119 @@ namespace SonicRetro.SonLVL.GUI
             this.insertLayoutToolStripMenuItem,
             this.deleteLayoutToolStripMenuItem});
             this.layoutContextMenuStrip.Name = "layoutContextMenuStrip";
-            this.layoutContextMenuStrip.Size = new System.Drawing.Size(203, 308);
+            this.layoutContextMenuStrip.Size = new System.Drawing.Size(193, 308);
             // 
             // cutToolStripMenuItem1
             // 
             this.cutToolStripMenuItem1.Image = global::SonicRetro.SonLVL.Properties.Resources.cut;
             this.cutToolStripMenuItem1.Name = "cutToolStripMenuItem1";
-            this.cutToolStripMenuItem1.Size = new System.Drawing.Size(202, 22);
-            this.cutToolStripMenuItem1.Text = "Cu&t";
+            this.cutToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
+            this.cutToolStripMenuItem1.Text = "剪切(&T)";
             this.cutToolStripMenuItem1.Click += new System.EventHandler(this.cutToolStripMenuItem1_Click);
             // 
             // copyToolStripMenuItem1
             // 
             this.copyToolStripMenuItem1.Image = global::SonicRetro.SonLVL.Properties.Resources.copy;
             this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
-            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(202, 22);
-            this.copyToolStripMenuItem1.Text = "&Copy";
+            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
+            this.copyToolStripMenuItem1.Text = "复制(C)";
             this.copyToolStripMenuItem1.Click += new System.EventHandler(this.copyToolStripMenuItem1_Click);
             // 
             // pasteOnceToolStripMenuItem
             // 
             this.pasteOnceToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.paste;
             this.pasteOnceToolStripMenuItem.Name = "pasteOnceToolStripMenuItem";
-            this.pasteOnceToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.pasteOnceToolStripMenuItem.Text = "&Paste Once";
+            this.pasteOnceToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.pasteOnceToolStripMenuItem.Text = "粘贴1次(&P)";
             this.pasteOnceToolStripMenuItem.Click += new System.EventHandler(this.pasteOnceToolStripMenuItem_Click);
             // 
             // pasteRepeatingToolStripMenuItem
             // 
             this.pasteRepeatingToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.paste;
             this.pasteRepeatingToolStripMenuItem.Name = "pasteRepeatingToolStripMenuItem";
-            this.pasteRepeatingToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.pasteRepeatingToolStripMenuItem.Text = "Paste &Repeating";
+            this.pasteRepeatingToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.pasteRepeatingToolStripMenuItem.Text = "重复粘贴(&R)";
             this.pasteRepeatingToolStripMenuItem.Click += new System.EventHandler(this.pasteRepeatingToolStripMenuItem_Click);
             // 
             // importToolStripMenuItem2
             // 
             this.importToolStripMenuItem2.Name = "importToolStripMenuItem2";
-            this.importToolStripMenuItem2.Size = new System.Drawing.Size(202, 22);
-            this.importToolStripMenuItem2.Text = "I&mport...";
+            this.importToolStripMenuItem2.Size = new System.Drawing.Size(192, 22);
+            this.importToolStripMenuItem2.Text = "导入(&M)";
             this.importToolStripMenuItem2.Click += new System.EventHandler(this.importToolStripMenuItem2_Click);
             // 
             // exportLayoutSectionToolStripMenuItem
             // 
             this.exportLayoutSectionToolStripMenuItem.Name = "exportLayoutSectionToolStripMenuItem";
-            this.exportLayoutSectionToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.exportLayoutSectionToolStripMenuItem.Text = "E&xport...";
+            this.exportLayoutSectionToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.exportLayoutSectionToolStripMenuItem.Text = "导出(&X)";
             this.exportLayoutSectionToolStripMenuItem.Click += new System.EventHandler(this.ExportLayoutSectionToolStripMenuItem_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(199, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(189, 6);
             // 
             // deleteToolStripMenuItem1
             // 
             this.deleteToolStripMenuItem1.Image = global::SonicRetro.SonLVL.Properties.Resources.delete;
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(202, 22);
-            this.deleteToolStripMenuItem1.Text = "C&lear";
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(192, 22);
+            this.deleteToolStripMenuItem1.Text = "清空(&L)";
             this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteToolStripMenuItem1_Click);
             // 
             // fillToolStripMenuItem
             // 
             this.fillToolStripMenuItem.Name = "fillToolStripMenuItem";
-            this.fillToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.fillToolStripMenuItem.Text = "&Fill With Selected Chunk";
+            this.fillToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.fillToolStripMenuItem.Text = "用选定的区块填充(&F)";
             this.fillToolStripMenuItem.Click += new System.EventHandler(this.fillToolStripMenuItem_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(199, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(189, 6);
             // 
             // saveSectionToolStripMenuItem
             // 
             this.saveSectionToolStripMenuItem.Name = "saveSectionToolStripMenuItem";
-            this.saveSectionToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.saveSectionToolStripMenuItem.Text = "&Save Section...";
+            this.saveSectionToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.saveSectionToolStripMenuItem.Text = "保存区域(&S)";
             this.saveSectionToolStripMenuItem.Click += new System.EventHandler(this.saveSectionToolStripMenuItem_Click);
             // 
             // pasteSectionOnceToolStripMenuItem
             // 
             this.pasteSectionOnceToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.paste;
             this.pasteSectionOnceToolStripMenuItem.Name = "pasteSectionOnceToolStripMenuItem";
-            this.pasteSectionOnceToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.pasteSectionOnceToolStripMenuItem.Text = "P&aste Section Once";
+            this.pasteSectionOnceToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.pasteSectionOnceToolStripMenuItem.Text = "粘贴区域一次(&A)";
             this.pasteSectionOnceToolStripMenuItem.Click += new System.EventHandler(this.pasteSectionOnceToolStripMenuItem_Click);
             // 
             // pasteSectionRepeatingToolStripMenuItem
             // 
             this.pasteSectionRepeatingToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.paste;
             this.pasteSectionRepeatingToolStripMenuItem.Name = "pasteSectionRepeatingToolStripMenuItem";
-            this.pasteSectionRepeatingToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.pasteSectionRepeatingToolStripMenuItem.Text = "Paste Section R&epeating";
+            this.pasteSectionRepeatingToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.pasteSectionRepeatingToolStripMenuItem.Text = "重复粘贴区域(&E)";
             this.pasteSectionRepeatingToolStripMenuItem.Click += new System.EventHandler(this.pasteSectionRepeatingToolStripMenuItem_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(199, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(189, 6);
             // 
             // insertLayoutToolStripMenuItem
             // 
             this.insertLayoutToolStripMenuItem.Name = "insertLayoutToolStripMenuItem";
-            this.insertLayoutToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.insertLayoutToolStripMenuItem.Text = "&Insert...";
+            this.insertLayoutToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.insertLayoutToolStripMenuItem.Text = "插入(&I)";
             this.insertLayoutToolStripMenuItem.Click += new System.EventHandler(this.insertLayoutToolStripMenuItem_Click);
             // 
             // deleteLayoutToolStripMenuItem
             // 
             this.deleteLayoutToolStripMenuItem.Name = "deleteLayoutToolStripMenuItem";
-            this.deleteLayoutToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
-            this.deleteLayoutToolStripMenuItem.Text = "&Delete...";
+            this.deleteLayoutToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.deleteLayoutToolStripMenuItem.Text = "删除(&D)";
             this.deleteLayoutToolStripMenuItem.Click += new System.EventHandler(this.deleteLayoutToolStripMenuItem_Click);
             // 
             // solidsContextMenuStrip
@@ -3398,30 +3398,30 @@ namespace SonicRetro.SonLVL.GUI
             this.pasteSolidsToolStripMenuItem,
             this.clearSolidsToolStripMenuItem});
             this.solidsContextMenuStrip.Name = "solidsContextMenuStrip";
-            this.solidsContextMenuStrip.Size = new System.Drawing.Size(103, 70);
+            this.solidsContextMenuStrip.Size = new System.Drawing.Size(117, 70);
             // 
             // copySolidsToolStripMenuItem
             // 
             this.copySolidsToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.copy;
             this.copySolidsToolStripMenuItem.Name = "copySolidsToolStripMenuItem";
-            this.copySolidsToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
-            this.copySolidsToolStripMenuItem.Text = "&Copy";
+            this.copySolidsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.copySolidsToolStripMenuItem.Text = "复制(&C)";
             this.copySolidsToolStripMenuItem.Click += new System.EventHandler(this.copySolidsToolStripMenuItem_Click);
             // 
             // pasteSolidsToolStripMenuItem
             // 
             this.pasteSolidsToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.paste;
             this.pasteSolidsToolStripMenuItem.Name = "pasteSolidsToolStripMenuItem";
-            this.pasteSolidsToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
-            this.pasteSolidsToolStripMenuItem.Text = "&Paste";
+            this.pasteSolidsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.pasteSolidsToolStripMenuItem.Text = "粘贴(&P)";
             this.pasteSolidsToolStripMenuItem.Click += new System.EventHandler(this.pasteSolidsToolStripMenuItem_Click);
             // 
             // clearSolidsToolStripMenuItem
             // 
             this.clearSolidsToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.delete;
             this.clearSolidsToolStripMenuItem.Name = "clearSolidsToolStripMenuItem";
-            this.clearSolidsToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
-            this.clearSolidsToolStripMenuItem.Text = "&Clear";
+            this.clearSolidsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.clearSolidsToolStripMenuItem.Text = "清空(&C)";
             this.clearSolidsToolStripMenuItem.Click += new System.EventHandler(this.clearSolidsToolStripMenuItem_Click);
             // 
             // chunkBlockContextMenuStrip
@@ -3433,46 +3433,46 @@ namespace SonicRetro.SonLVL.GUI
             this.pasteChunkBlocksToolStripMenuItem,
             this.clearChunkBlocksToolStripMenuItem});
             this.chunkBlockContextMenuStrip.Name = "solidsContextMenuStrip";
-            this.chunkBlockContextMenuStrip.Size = new System.Drawing.Size(161, 114);
+            this.chunkBlockContextMenuStrip.Size = new System.Drawing.Size(144, 114);
             // 
             // flipChunkBlocksHorizontallyToolStripMenuItem
             // 
             this.flipChunkBlocksHorizontallyToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.fliph;
             this.flipChunkBlocksHorizontallyToolStripMenuItem.Name = "flipChunkBlocksHorizontallyToolStripMenuItem";
-            this.flipChunkBlocksHorizontallyToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.flipChunkBlocksHorizontallyToolStripMenuItem.Text = "Flip &Horizontally";
+            this.flipChunkBlocksHorizontallyToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.flipChunkBlocksHorizontallyToolStripMenuItem.Text = "水平翻转(&H)";
             this.flipChunkBlocksHorizontallyToolStripMenuItem.Click += new System.EventHandler(this.flipChunkBlocksHorizontallyToolStripMenuItem_Click);
             // 
             // flipChunkBlocksVerticallyToolStripMenuItem
             // 
             this.flipChunkBlocksVerticallyToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.flipv;
             this.flipChunkBlocksVerticallyToolStripMenuItem.Name = "flipChunkBlocksVerticallyToolStripMenuItem";
-            this.flipChunkBlocksVerticallyToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.flipChunkBlocksVerticallyToolStripMenuItem.Text = "Flip &Vertically";
+            this.flipChunkBlocksVerticallyToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.flipChunkBlocksVerticallyToolStripMenuItem.Text = "垂直翻转(&V)";
             this.flipChunkBlocksVerticallyToolStripMenuItem.Click += new System.EventHandler(this.flipChunkBlocksVerticallyToolStripMenuItem_Click);
             // 
             // copyChunkBlocksToolStripMenuItem
             // 
             this.copyChunkBlocksToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.copy;
             this.copyChunkBlocksToolStripMenuItem.Name = "copyChunkBlocksToolStripMenuItem";
-            this.copyChunkBlocksToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.copyChunkBlocksToolStripMenuItem.Text = "&Copy";
+            this.copyChunkBlocksToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.copyChunkBlocksToolStripMenuItem.Text = "复制(&C)";
             this.copyChunkBlocksToolStripMenuItem.Click += new System.EventHandler(this.copyChunkBlocksToolStripMenuItem_Click);
             // 
             // pasteChunkBlocksToolStripMenuItem
             // 
             this.pasteChunkBlocksToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.paste;
             this.pasteChunkBlocksToolStripMenuItem.Name = "pasteChunkBlocksToolStripMenuItem";
-            this.pasteChunkBlocksToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.pasteChunkBlocksToolStripMenuItem.Text = "&Paste";
+            this.pasteChunkBlocksToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.pasteChunkBlocksToolStripMenuItem.Text = "粘贴(&P)";
             this.pasteChunkBlocksToolStripMenuItem.Click += new System.EventHandler(this.pasteChunkBlocksToolStripMenuItem_Click);
             // 
             // clearChunkBlocksToolStripMenuItem
             // 
             this.clearChunkBlocksToolStripMenuItem.Image = global::SonicRetro.SonLVL.Properties.Resources.delete;
             this.clearChunkBlocksToolStripMenuItem.Name = "clearChunkBlocksToolStripMenuItem";
-            this.clearChunkBlocksToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.clearChunkBlocksToolStripMenuItem.Text = "&Clear";
+            this.clearChunkBlocksToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.clearChunkBlocksToolStripMenuItem.Text = "清空(&C)";
             this.clearChunkBlocksToolStripMenuItem.Click += new System.EventHandler(this.clearChunkBlocksToolStripMenuItem_Click);
             // 
             // loadingAnimation1
