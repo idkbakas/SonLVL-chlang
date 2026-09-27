@@ -468,7 +468,7 @@ namespace SonicRetro.SonLVL.GUI
 					default:
 						throw new NotImplementedException("不支持 " + LevelData.Game.EngineVersion.ToString() + " 此游戏种类!");
 				}
-			Text = "SonLVL - " + LevelData.Game.GameName;
+			Text = "索尼克关卡编译器 - " + LevelData.Game.GameName;
 			buildAndRunToolStripMenuItem.Enabled = LevelData.Game.BuildScript != null & (LevelData.Game.ROMFile != null | LevelData.Game.RunCommand != null);
 			if (Settings.MRUList.Count == 0)
 				recentProjectsToolStripMenuItem.DropDownItems.Remove(noneToolStripMenuItem2);
@@ -487,7 +487,7 @@ namespace SonicRetro.SonLVL.GUI
 		{
 			if (loaded)
 			{
-				switch (MessageBox.Show(this, "Do you want to save?", Text, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question))
+				switch (MessageBox.Show(this, "你想保存吗?", Text, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question))
 				{
 					case DialogResult.Yes:
 						saveToolStripMenuItem_Click(this, EventArgs.Empty);
@@ -499,7 +499,7 @@ namespace SonicRetro.SonLVL.GUI
 			using (OpenFileDialog a = new OpenFileDialog()
 			{
 				DefaultExt = "ini",
-				Filter = "INI Files|*.ini|All Files|*.*"
+				Filter = "INI文件|*.ini|所有文件|*.*"
 			})
 				if (a.ShowDialog(this) == DialogResult.OK)
 				{
@@ -513,7 +513,7 @@ namespace SonicRetro.SonLVL.GUI
 			if (loaded)
 			{
 				fileToolStripMenuItem.DropDown.Hide();
-				switch (MessageBox.Show(this, "Do you want to save?", Text, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question))
+				switch (MessageBox.Show(this, "你想保存吗?", Text, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question))
 				{
 					case DialogResult.Yes:
 						saveToolStripMenuItem_Click(this, EventArgs.Empty);
@@ -528,7 +528,7 @@ namespace SonicRetro.SonLVL.GUI
 			((ToolStripMenuItem)sender).Checked = true;
 			Enabled = false;
 			UseWaitCursor = true;
-			Text = "SonLVL - " + LevelData.Game.GameName + " - Loading " + LevelData.Game.GetLevelInfo((string)((ToolStripMenuItem)sender).Tag).DisplayName + "...";
+			Text = "SonLVL - " + LevelData.Game.GameName + " - 加载中 " + LevelData.Game.GetLevelInfo((string)((ToolStripMenuItem)sender).Tag).DisplayName + "...";
 			LevelData.littleendian = false;
 			string anipath = Path.Combine(Application.StartupPath, "loadanim");
 			Dictionary<string, AnimationInfo> animini = AnimationInfo.Load(Path.Combine(anipath, "anims.ini"));
@@ -1070,14 +1070,14 @@ namespace SonicRetro.SonLVL.GUI
 				if (!string.IsNullOrEmpty(Settings.Emulator))
 					System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(Settings.Emulator, '"' + Path.GetFullPath(romfile) + '"') { WorkingDirectory = Path.GetDirectoryName(Settings.Emulator) });
 				else
-					MessageBox.Show("You must set up an emulator before you can run the ROM, use File -> Setup Emulator.");
+					MessageBox.Show("在调试ROM之前你必须设置一个模拟器(文件->设置模拟器).");
 			else
 				System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(Path.GetFullPath(romfile)) { WorkingDirectory = Path.GetDirectoryName(Path.GetFullPath(romfile)) });
 		}
 
 		private void setupEmulatorToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			using (OpenFileDialog opn = new OpenFileDialog() { DefaultExt = "exe", Filter = "EXE Files|*.exe|All Files|*.*", RestoreDirectory = true })
+			using (OpenFileDialog opn = new OpenFileDialog() { DefaultExt = "exe", Filter = "可执行程序|*.exe|所有文件|*.*", RestoreDirectory = true })
 			{
 				if (!string.IsNullOrEmpty(Settings.Emulator))
 				{
@@ -1242,7 +1242,7 @@ namespace SonicRetro.SonLVL.GUI
 				item.Checked = false;
 			((ToolStripMenuItem)e.ClickedItem).Checked = true;
 			LevelData.CurPal = paletteToolStripDropDownButton.DropDownItems.IndexOf(e.ClickedItem);
-			paletteToolStripDropDownButton.Text = "Palette: " + e.ClickedItem.Text;
+			paletteToolStripDropDownButton.Text = "调色板: " + e.ClickedItem.Text;
 			if (LevelData.WaterPalette == LevelData.CurPal)
 				LevelData.WaterPalette = -1;
 			selectPaletteToolStripMenuItem.DropDownItems.Clear();
@@ -1362,7 +1362,7 @@ namespace SonicRetro.SonLVL.GUI
 		private void pNGToolStripMenuItem_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
 		{
 			exportToolStripMenuItem.DropDown.Hide();
-			using (SaveFileDialog a = new SaveFileDialog() { DefaultExt = "png", Filter = "PNG Files|*.png", RestoreDirectory = true })
+			using (SaveFileDialog a = new SaveFileDialog() { DefaultExt = "png", Filter = "PNG位图|*.png", RestoreDirectory = true })
 				if (a.ShowDialog(this) == DialogResult.OK)
 				{
 					int line = pNGToolStripMenuItem.DropDownItems.IndexOf(e.ClickedItem);
@@ -1394,7 +1394,7 @@ namespace SonicRetro.SonLVL.GUI
 
 		private void yYCHRToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			using (SaveFileDialog a = new SaveFileDialog() { DefaultExt = "pal", Filter = "Palette Files|*.pal", RestoreDirectory = true })
+			using (SaveFileDialog a = new SaveFileDialog() { DefaultExt = "pal", Filter = "调色板文件|*.pal", RestoreDirectory = true })
 				if (a.ShowDialog(this) == DialogResult.OK)
 					using (FileStream str = File.Create(a.FileName))
 					using (BinaryWriter bw = new BinaryWriter(str))
@@ -1419,7 +1419,7 @@ namespace SonicRetro.SonLVL.GUI
 		private void jASCPALToolStripMenuItem_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
 		{
 			exportToolStripMenuItem.DropDown.Hide();
-			using (SaveFileDialog a = new SaveFileDialog() { DefaultExt = "pal", Filter = "JASC-PAL Files|*.pal;*.PspPalette", RestoreDirectory = true })
+			using (SaveFileDialog a = new SaveFileDialog() { DefaultExt = "pal", Filter = "JASC-PAL文件|*.pal;*.PspPalette", RestoreDirectory = true })
 				if (a.ShowDialog(this) == DialogResult.OK)
 					using (StreamWriter writer = File.CreateText(a.FileName))
 					{
@@ -1633,7 +1633,7 @@ namespace SonicRetro.SonLVL.GUI
 			using (SaveFileDialog a = new SaveFileDialog()
 			{
 				DefaultExt = "png",
-				Filter = "PNG Files|*.png",
+				Filter = "PNG 文件|*.png",
 				RestoreDirectory = true
 			})
 				if (a.ShowDialog() == DialogResult.OK)
@@ -1736,7 +1736,7 @@ namespace SonicRetro.SonLVL.GUI
 			using (SaveFileDialog a = new SaveFileDialog()
 			{
 				DefaultExt = "png",
-				Filter = "PNG Files|*.png",
+				Filter = "PNG 文件|*.png",
 				RestoreDirectory = true
 			})
 				if (a.ShowDialog() == DialogResult.OK)
@@ -3537,7 +3537,7 @@ namespace SonicRetro.SonLVL.GUI
 					ObjectEntry tmp = LevelData.ObjectFormat.CreateObject();
 					tmp.SubType = sub;
 					Rectangle bnd = LevelData.GetObjectDefinition(ID).GetBounds(tmp);
-					dlg.Text = "Add Group of Objects";
+					dlg.Text = "添加一组物体";
 					dlg.XDist.Value = bnd.Width;
 					dlg.YDist.Value = bnd.Height;
 					if (dlg.ShowDialog(this) == DialogResult.OK)
@@ -3592,7 +3592,7 @@ namespace SonicRetro.SonLVL.GUI
 		{
 			using (AddGroupDialog dlg = new AddGroupDialog())
 			{
-				dlg.Text = "Add Group of Rings";
+				dlg.Text = "添加一组金环s";
 				dlg.XDist.Value = 24;
 				dlg.YDist.Value = 24;
 				if (dlg.ShowDialog(this) == DialogResult.OK)
@@ -4780,7 +4780,7 @@ namespace SonicRetro.SonLVL.GUI
 			using (OpenFileDialog a = new OpenFileDialog())
 			{
 				a.DefaultExt = "bin";
-				a.Filter = "MD Palettes|*.bin|Image Files|*.bmp;*.png;*.jpg;*.gif";
+				a.Filter = "MD 调色板|*.bin|图像文件|*.bmp;*.png;*.jpg;*.gif";
 				a.RestoreDirectory = true;
 				if (a.ShowDialog(this) == DialogResult.OK)
 				{
@@ -5237,22 +5237,22 @@ namespace SonicRetro.SonLVL.GUI
 						}
 						if (cnkcpy.IsS2 != isS2)
 						{
-							MessageBox.Show(this, "Copied chunk data does not match current level's format.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "复制的区块不匹配现关卡格式.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Level.TwoPlayerCompatible && !cnkcpy.IsInterlacedCompatible)
 						{
-							MessageBox.Show(this, "Copied chunk data is not 2P compatible.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "复制的区块数据不适用于2P模式", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Blocks.Count + cnkcpy.Blocks.Count > LevelData.GetBlockMax())
 						{
-							MessageBox.Show(this, "Level does not have enough free blocks.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "关卡没有足够的自由块", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Tiles.Count + cnkcpy.Tiles.Count > 0x8000)
 						{
-							MessageBox.Show(this, "Level does not have enough free tiles.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "关卡没有足够的自由瓷片", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						List<ushort> tiles = new List<ushort>(cnkcpy.Tiles.Count);
@@ -5340,12 +5340,12 @@ namespace SonicRetro.SonLVL.GUI
 						BlockCopyData blkcpy = (BlockCopyData)Clipboard.GetData(typeof(BlockCopyData).AssemblyQualifiedName);
 						if (LevelData.Level.TwoPlayerCompatible && !blkcpy.Block.IsInterlacedCompatible)
 						{
-							MessageBox.Show(this, "Copied block data is not 2P compatible.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "块数据不适用于2P模式.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Tiles.Count + blkcpy.Tiles.Count > 0x800)
 						{
-							MessageBox.Show(this, "Level does not have enough free tiles.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "关卡没有足够的自由瓦片.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						List<ushort> tiles = new List<ushort>(blkcpy.Tiles.Count);
@@ -5433,22 +5433,22 @@ namespace SonicRetro.SonLVL.GUI
 						}
 						if (cnkcpy.IsS2 != isS2)
 						{
-							MessageBox.Show(this, "Copied chunk data does not match current level's format.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "复制的区块数据不匹配关卡格式.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Level.TwoPlayerCompatible && !cnkcpy.IsInterlacedCompatible)
 						{
-							MessageBox.Show(this, "Copied chunk data is not 2P compatible.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "复制的区块无2P兼容.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Blocks.Count + cnkcpy.Blocks.Count > LevelData.GetBlockMax())
 						{
-							MessageBox.Show(this, "Level does not have enough free blocks.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "关卡没有足够的自由块", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Tiles.Count + cnkcpy.Tiles.Count > 0x800)
 						{
-							MessageBox.Show(this, "Level does not have enough free tiles.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "关卡没有足够的自由瓷片", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						List<ushort> tiles = new List<ushort>(cnkcpy.Tiles.Count);
@@ -5536,12 +5536,12 @@ namespace SonicRetro.SonLVL.GUI
 						BlockCopyData blkcpy = (BlockCopyData)Clipboard.GetData(typeof(BlockCopyData).AssemblyQualifiedName);
 						if (LevelData.Level.TwoPlayerCompatible && !blkcpy.Block.IsInterlacedCompatible)
 						{
-							MessageBox.Show(this, "Copied block data is not 2P compatible.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "复制的块状数据不适用于2P模式.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Tiles.Count + blkcpy.Tiles.Count > 0x8000)
 						{
-							MessageBox.Show(this, "Level does not have enough free tiles.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "关卡没有足够的自由瓷片.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						List<ushort> tiles = new List<ushort>(blkcpy.Tiles.Count);
@@ -5726,7 +5726,7 @@ namespace SonicRetro.SonLVL.GUI
 						case ArtTab.Chunks:
 							if (bmp.Width < LevelData.Level.ChunkWidth || bmp.Height < LevelData.Level.ChunkHeight)
 							{
-								MessageBox.Show(this, $"The image you have selected is too small ({bmp.Width}x{bmp.Height}). It must be at least as large as one chunk ({LevelData.Level.ChunkWidth}x{LevelData.Level.ChunkHeight})", "SonLVL Chunk Importer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+								MessageBox.Show(this, $"这个图片太小了 ({bmp.Width}x{bmp.Height}). 应该至少是一个区块的大小 ({LevelData.Level.ChunkWidth}x{LevelData.Level.ChunkHeight})", "SonLVL Chunk Importer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 								bmp.Dispose();
 								return;
 							}
@@ -5734,7 +5734,7 @@ namespace SonicRetro.SonLVL.GUI
 						case ArtTab.Blocks:
 							if (bmp.Width < 16 || bmp.Height < 16)
 							{
-								MessageBox.Show(this, $"The image you have selected is too small ({bmp.Width}x{bmp.Height}). It must be at least as large as one block (16x16)", "SonLVL Block Importer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+								MessageBox.Show(this, $"这个图片太小了 ({bmp.Width}x{bmp.Height}). 应该至少是一个块的大小 (16x16)", "SonLVL Block Importer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 								bmp.Dispose();
 								return;
 							}
@@ -5742,7 +5742,7 @@ namespace SonicRetro.SonLVL.GUI
 						case ArtTab.Tiles:
 							if (bmp.Width < 8 || bmp.Height < (LevelData.Level.TwoPlayerCompatible ? 16 : 8))
 							{
-								MessageBox.Show(this, $"The image you have selected is too small ({bmp.Width}x{bmp.Height}). It must be at least as large as one tile (8x{(LevelData.Level.TwoPlayerCompatible ? 16 : 8)}", "SonLVL Tile Importer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+								MessageBox.Show(this, $"这个图片太小了 ({bmp.Width}x{bmp.Height}). 应该至少是一个瓷片的大小 (8x{(LevelData.Level.TwoPlayerCompatible ? 16 : 8)}", "SonLVL Tile Importer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 								bmp.Dispose();
 								return;
 							}
@@ -5870,7 +5870,7 @@ namespace SonicRetro.SonLVL.GUI
 				importProgressControl1.Hide();
 				Enabled = true;
 				UseWaitCursor = false;
-				MessageBox.Show(this, "There are " + (LevelData.Tiles.Count + newTiles.Count - 0x800) + " tiles over the limit.\nImport cannot proceed.", "SonLVL", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show(this, "瓷片超过了最大限度 " + (LevelData.Tiles.Count + newTiles.Count - 0x800) + " .\n导入失败.", "SonLVL", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				return false;
 			}
 			if (newBlocks.Count > 0 && LevelData.Blocks.Count + newBlocks.Count > LevelData.GetBlockMax())
@@ -5878,7 +5878,7 @@ namespace SonicRetro.SonLVL.GUI
 				importProgressControl1.Hide();
 				Enabled = true;
 				UseWaitCursor = false;
-				MessageBox.Show(this, "There are " + (LevelData.Blocks.Count + newBlocks.Count - LevelData.GetBlockMax()) + " blocks over the limit.\nImport cannot proceed.", "SonLVL", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show(this, "块超过了最大限度 " + (LevelData.Blocks.Count + newBlocks.Count - LevelData.GetBlockMax()) + " .\n导入失败.", "SonLVL", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				return false;
 			}
 			if (newChunks.Count > 0 && LevelData.Chunks.Count + newChunks.Count > LevelData.GetChunkMax())
@@ -5886,7 +5886,7 @@ namespace SonicRetro.SonLVL.GUI
 				importProgressControl1.Hide();
 				Enabled = true;
 				UseWaitCursor = false;
-				MessageBox.Show(this, "There are " + (LevelData.Chunks.Count + newChunks.Count - LevelData.GetChunkMax()) + " chunks over the limit.\nImport cannot proceed.", "SonLVL", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				MessageBox.Show(this, "区块超过了最大限度 " + (LevelData.Chunks.Count + newChunks.Count - LevelData.GetChunkMax()) + ".\n导入失败.", "SonLVL", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				return false;
 			}
 			if (newTiles.Count > 0)
@@ -6933,7 +6933,7 @@ namespace SonicRetro.SonLVL.GUI
 					}
 				}
 				else
-					MessageBox.Show(this, "The current game does not allow you to resize levels!", Text);
+					MessageBox.Show(this, "此游戏不允许你调整关卡大小!", Text);
 			}
 		}
 
@@ -7470,9 +7470,9 @@ namespace SonicRetro.SonLVL.GUI
 		{
 			using (InsertDeleteDialog dlg = new InsertDeleteDialog())
 			{
-				dlg.Text = "Delete";
-				dlg.shiftH.Text = "Shift cells left";
-				dlg.shiftV.Text = "Shift cells up";
+				dlg.Text = "删除";
+				dlg.shiftH.Text = "单元格左移";
+				dlg.shiftV.Text = "单元格上移";
 				dlg.moveObjects.Visible = dlg.moveObjects.Checked = CurrentTab == Tab.Foreground;
 				if (dlg.ShowDialog(this) != DialogResult.OK) return;
 				Rectangle selection;
@@ -8049,7 +8049,7 @@ namespace SonicRetro.SonLVL.GUI
 						case DialogResult.Yes:
 							SelectedItems.AddRange(foundobjs.OfType<Entry>());
 							if (SelectedItems.Count > 0)
-								MessageBox.Show(this, SelectedItems.Count + " object" + (SelectedItems.Count > 1 ? "s" : "") + " found.",
+								MessageBox.Show(this, SelectedItems.Count + " 查找到" + (SelectedItems.Count > 1 ? "s" : "") + " 物体.",
 									"SonLVL");
 							break;
 						case DialogResult.OK:
@@ -8066,7 +8066,7 @@ namespace SonicRetro.SonLVL.GUI
 					}
 					else
 					{
-						MessageBox.Show(this, "No matching objects found.", "SonLVL");
+						MessageBox.Show(this, "没查找到匹配的物体.", "SonLVL");
 						findNextToolStripMenuItem.Enabled = findPreviousToolStripMenuItem.Enabled = false;
 						foundobjs = null;
 					}
@@ -8082,7 +8082,7 @@ namespace SonicRetro.SonLVL.GUI
 								for (int y = 0; y < LevelData.FGHeight; y++)
 									if (LevelData.Layout.FGLayout[x, y] == findFGChunksDialog.chunkSelect.Value)
 										count++;
-							MessageBox.Show(this, count + " chunk" + (count != 1 ? "s" : "") + " found.",
+							MessageBox.Show(this, count + " 查找到" + (count != 1 ? "s" : "") + " 区块.",
 								"SonLVL");
 							break;
 						case DialogResult.OK:
@@ -8104,7 +8104,7 @@ namespace SonicRetro.SonLVL.GUI
 										DrawLevel();
 										return;
 									}
-							MessageBox.Show(this, "No matching chunks found.", "SonLVL");
+							MessageBox.Show(this, "没查找到匹配的区块.", "SonLVL");
 							lastfoundfgchunk = null;
 							findNextToolStripMenuItem.Enabled = findPreviousToolStripMenuItem.Enabled = false;
 							break;
@@ -8119,7 +8119,7 @@ namespace SonicRetro.SonLVL.GUI
 								for (int y = 0; y < LevelData.BGHeight; y++)
 									if (LevelData.Layout.BGLayout[x, y] == findBGChunksDialog.chunkSelect.Value)
 										count++;
-							MessageBox.Show(this, count + " chunk" + (count != 1 ? "s" : "") + " found.",
+							MessageBox.Show(this, count + " 查找到" + (count != 1 ? "s" : "") + " 区块.",
 								"SonLVL");
 							break;
 						case DialogResult.OK:
@@ -8141,7 +8141,7 @@ namespace SonicRetro.SonLVL.GUI
 										DrawLevel();
 										return;
 									}
-							MessageBox.Show(this, "No matching chunks found.", "SonLVL");
+							MessageBox.Show(this, "没找到匹配的区块.", "SonLVL");
 							lastfoundbgchunk = null;
 							findNextToolStripMenuItem.Enabled = findPreviousToolStripMenuItem.Enabled = false;
 							break;
@@ -8174,7 +8174,7 @@ namespace SonicRetro.SonLVL.GUI
 					}
 					else
 					{
-						MessageBox.Show(this, "No more objects found.", "SonLVL");
+						MessageBox.Show(this, "查找不到其余物体", "SonLVL");
 						findNextToolStripMenuItem.Enabled = false;
 					}
 					break;
@@ -8202,7 +8202,7 @@ namespace SonicRetro.SonLVL.GUI
 								return;
 							}
 						}
-					MessageBox.Show(this, "No more chunks found.", "SonLVL");
+					MessageBox.Show(this, "查找不到其余区块.", "SonLVL");
 					findNextToolStripMenuItem.Enabled = false;
 					break;
 				case Tab.Background:
@@ -8229,7 +8229,7 @@ namespace SonicRetro.SonLVL.GUI
 								return;
 							}
 						}
-					MessageBox.Show(this, "No more chunks found.", "SonLVL");
+					MessageBox.Show(this, "查找不到其余区块.", "SonLVL");
 					findNextToolStripMenuItem.Enabled = false;
 					break;
 			}
@@ -8251,7 +8251,7 @@ namespace SonicRetro.SonLVL.GUI
 					}
 					else
 					{
-						MessageBox.Show(this, "No more objects found.", "SonLVL");
+						MessageBox.Show(this, "查找不到其余物体.", "SonLVL");
 						findPreviousToolStripMenuItem.Enabled = false;
 					}
 					break;
@@ -8279,7 +8279,7 @@ namespace SonicRetro.SonLVL.GUI
 								return;
 							}
 						}
-					MessageBox.Show(this, "No more chunks found.", "SonLVL");
+					MessageBox.Show(this, "查找不到其余区块.", "SonLVL");
 					findPreviousToolStripMenuItem.Enabled = false;
 					break;
 				case Tab.Background:
@@ -8306,7 +8306,7 @@ namespace SonicRetro.SonLVL.GUI
 								return;
 							}
 						}
-					MessageBox.Show(this, "No more chunks found.", "SonLVL");
+					MessageBox.Show(this, "查找不到其他区块.", "SonLVL");
 					findPreviousToolStripMenuItem.Enabled = false;
 					break;
 			}

@@ -875,25 +875,25 @@ namespace SonicRetro.SonLVL.GUI
             // 
             line0ToolStripMenuItem.Name = "line0ToolStripMenuItem";
             line0ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            line0ToolStripMenuItem.Text = "Line &0";
+            line0ToolStripMenuItem.Text = "行 &0";
             // 
             // line1ToolStripMenuItem
             // 
             line1ToolStripMenuItem.Name = "line1ToolStripMenuItem";
             line1ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            line1ToolStripMenuItem.Text = "Line &1";
+            line1ToolStripMenuItem.Text = "行 &1";
             // 
             // line2ToolStripMenuItem
             // 
             line2ToolStripMenuItem.Name = "line2ToolStripMenuItem";
             line2ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            line2ToolStripMenuItem.Text = "Line &2";
+            line2ToolStripMenuItem.Text = "行 &2";
             // 
             // line3ToolStripMenuItem
             // 
             line3ToolStripMenuItem.Name = "line3ToolStripMenuItem";
             line3ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            line3ToolStripMenuItem.Text = "Line &3";
+            line3ToolStripMenuItem.Text = "行 &3";
             // 
             // toolStripSeparator2
             // 
@@ -904,7 +904,7 @@ namespace SonicRetro.SonLVL.GUI
             // 
             fullToolStripMenuItem.Name = "fullToolStripMenuItem";
             fullToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            fullToolStripMenuItem.Text = "&Full";
+            fullToolStripMenuItem.Text = "&所有";
             // 
             // toolStripSeparator1
             // 
@@ -915,25 +915,25 @@ namespace SonicRetro.SonLVL.GUI
             // 
             line0ToolStripMenuItem1.Name = "line0ToolStripMenuItem1";
             line0ToolStripMenuItem1.Size = new System.Drawing.Size(105, 22);
-            line0ToolStripMenuItem1.Text = "Line &0";
+            line0ToolStripMenuItem1.Text = "行 &0";
             // 
             // line1ToolStripMenuItem1
             // 
             line1ToolStripMenuItem1.Name = "line1ToolStripMenuItem1";
             line1ToolStripMenuItem1.Size = new System.Drawing.Size(105, 22);
-            line1ToolStripMenuItem1.Text = "Line &1";
+            line1ToolStripMenuItem1.Text = "行 &1";
             // 
             // line2ToolStripMenuItem1
             // 
             line2ToolStripMenuItem1.Name = "line2ToolStripMenuItem1";
             line2ToolStripMenuItem1.Size = new System.Drawing.Size(105, 22);
-            line2ToolStripMenuItem1.Text = "Line &2";
+            line2ToolStripMenuItem1.Text = "行 &2";
             // 
             // line3ToolStripMenuItem1
             // 
             line3ToolStripMenuItem1.Name = "line3ToolStripMenuItem1";
             line3ToolStripMenuItem1.Size = new System.Drawing.Size(105, 22);
-            line3ToolStripMenuItem1.Text = "Line &3";
+            line3ToolStripMenuItem1.Text = "行 &3";
             // 
             // toolStripSeparator13
             // 
@@ -944,7 +944,7 @@ namespace SonicRetro.SonLVL.GUI
             // 
             fullToolStripMenuItem1.Name = "fullToolStripMenuItem1";
             fullToolStripMenuItem1.Size = new System.Drawing.Size(105, 22);
-            fullToolStripMenuItem1.Text = "&Full";
+            fullToolStripMenuItem1.Text = "&所有";
             // 
             // label1
             // 
