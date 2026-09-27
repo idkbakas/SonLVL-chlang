@@ -3515,7 +3515,7 @@ namespace SonicRetro.SonLVL.GUI
             this.KeyPreview = true;
             this.MainMenuStrip = this.mainMenuStrip;
             this.Name = "MainForm";
-            this.Text = "Ë÷¹Ø±àÒëÆ÷";
+            this.Text = "Ë÷Äá¿Ë¹Ø¿¨±à¼­Æ÷";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
