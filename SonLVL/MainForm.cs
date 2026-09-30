@@ -25,7 +25,7 @@ namespace SonicRetro.SonLVL.GUI
 		double sonlvl_ch_ver;
 		public MainForm()
 		{
-			sonlvl_ch_ver = 1.2;
+			sonlvl_ch_ver = 1.06;
 			Application.ThreadException += Application_ThreadException;
 			Instance = this;
 			pid = System.Diagnostics.Process.GetCurrentProcess().Id;

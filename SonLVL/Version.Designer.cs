@@ -51,7 +51,7 @@ namespace SonicRetro.SonLVL
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 12);
             this.label2.TabIndex = 5;
-            this.label2.Text = "版本 1          修订 5";
+            this.label2.Text = "版本 1          修订 6";
             // 
             // label3
             // 
