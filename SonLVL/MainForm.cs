@@ -8987,7 +8987,7 @@ namespace SonicRetro.SonLVL.GUI
 		private void layoutSectionListBox_KeyDown(object sender, KeyEventArgs e)
 		{
 			if (layoutSectionListBox.SelectedIndex != -1 && e.KeyCode == Keys.Delete
-				&& MessageBox.Show(this, "你要删除布局吗 \"" + savedLayoutSections[layoutSectionListBox.SelectedIndex].Name + "\"?", "SonLVL", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+				&& MessageBox.Show(this, "Are you sure you want to delete layout section \"" + savedLayoutSections[layoutSectionListBox.SelectedIndex].Name + "\"?", "SonLVL", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
 			{
 				savedLayoutSections.RemoveAt(layoutSectionListBox.SelectedIndex);
 				savedLayoutSectionImages.RemoveAt(layoutSectionListBox.SelectedIndex);
@@ -9144,22 +9144,22 @@ namespace SonicRetro.SonLVL.GUI
 						}
 						if (cnkcpy.IsS2 != isS2)
 						{
-							MessageBox.Show(this, "复制的区块与当前关卡格式不匹配.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "Copied chunk data does not match current level's format.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Level.TwoPlayerCompatible && !cnkcpy.IsInterlacedCompatible)
 						{
-							MessageBox.Show(this, "复制的区块不支持2P模式.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "Copied chunk data is not 2P compatible.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Blocks.Count + cnkcpy.Blocks.Count > LevelData.GetBlockMax())
 						{
-							MessageBox.Show(this, "关卡无足够可用块.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "Level does not have enough free blocks.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Tiles.Count + cnkcpy.Tiles.Count > 0x8000)
 						{
-							MessageBox.Show(this, "关卡无足够可用瓦片.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "Level does not have enough free tiles.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						List<ushort> tiles = new List<ushort>(cnkcpy.Tiles.Count);
@@ -9225,12 +9225,12 @@ namespace SonicRetro.SonLVL.GUI
 						BlockCopyData blkcpy = (BlockCopyData)Clipboard.GetData(typeof(BlockCopyData).AssemblyQualifiedName);
 						if (LevelData.Level.TwoPlayerCompatible && !blkcpy.Block.IsInterlacedCompatible)
 						{
-							MessageBox.Show(this, "复制的块数据不支持2P模式.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "Copied block data is not 2P compatible.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						if (LevelData.Tiles.Count + blkcpy.Tiles.Count > 0x8000)
 						{
-							MessageBox.Show(this, "关卡没有足够可用的瓷片.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, "Level does not have enough free tiles.", Text, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						List<ushort> tiles = new List<ushort>(blkcpy.Tiles.Count);
@@ -9462,7 +9462,7 @@ namespace SonicRetro.SonLVL.GUI
 			using (OpenFileDialog opendlg = new OpenFileDialog()
 			{
 				DefaultExt = "png",
-				Filter = "图片文件|*.bmp;*.png;*.jpg;*.gif",
+				Filter = "Image Files|*.bmp;*.png;*.jpg;*.gif",
 				RestoreDirectory = true
 			})
 				if (opendlg.ShowDialog(this) == DialogResult.OK)
@@ -9470,7 +9470,7 @@ namespace SonicRetro.SonLVL.GUI
 					{
 						if (bmp.Width < LevelData.Level.ChunkWidth || bmp.Height < LevelData.Level.ChunkHeight)
 						{
-							MessageBox.Show(this, $"这个图片太小了 ({bmp.Width}x{bmp.Height}). 需有一个区块(像素)长那么大 ({LevelData.Level.ChunkWidth}x{LevelData.Level.ChunkHeight})", "SonLVL Layout Importer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, $"The image you have selected is too small ({bmp.Width}x{bmp.Height}). It must be at least as large as one chunk ({LevelData.Level.ChunkWidth}x{LevelData.Level.ChunkHeight})", "SonLVL Layout Importer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						Bitmap colbmp1 = null, colbmp2 = null, pribmp = null;
@@ -9530,7 +9530,7 @@ namespace SonicRetro.SonLVL.GUI
 			using (OpenFileDialog opendlg = new OpenFileDialog()
 			{
 				DefaultExt = "png",
-				Filter = "图片文件|*.bmp;*.png;*.jpg;*.gif",
+				Filter = "Image Files|*.bmp;*.png;*.jpg;*.gif",
 				RestoreDirectory = true
 			})
 				if (opendlg.ShowDialog(this) == DialogResult.OK)
@@ -9538,7 +9538,7 @@ namespace SonicRetro.SonLVL.GUI
 					{
 						if (bmp.Width < LevelData.Level.ChunkWidth || bmp.Height < LevelData.Level.ChunkHeight)
 						{
-							MessageBox.Show(this, $"这个图片太小了 ({bmp.Width}x{bmp.Height}). 需有一个区块(像素)长那么大 ({LevelData.Level.ChunkWidth}x{LevelData.Level.ChunkHeight})", "SonLVL Layout Section Importer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+							MessageBox.Show(this, $"The image you have selected is too small ({bmp.Width}x{bmp.Height}). It must be at least as large as one chunk ({LevelData.Level.ChunkWidth}x{LevelData.Level.ChunkHeight})", "SonLVL Layout Section Importer", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
 						}
 						Bitmap colbmp1 = null, colbmp2 = null, pribmp = null;
@@ -9613,13 +9613,13 @@ namespace SonicRetro.SonLVL.GUI
 			{
 				chunkblockMouseDraw = MouseButtons.Right;
 				chunkblockMouseSelect = MouseButtons.Left;
-				chunkCtrlLabel.Text = "RMB: 点击画画。 w/ \nLMB: 选择块";
+				chunkCtrlLabel.Text = "RMB: Paint w/ selected block\nLMB: Select block";
 			}
 			else
 			{
 				chunkblockMouseDraw = MouseButtons.Left;
 				chunkblockMouseSelect = MouseButtons.Right;
-				chunkCtrlLabel.Text = "LMB: 点击画画。w/ \nRMB: 选择块";
+				chunkCtrlLabel.Text = "LMB: Paint w/ selected block\nRMB: Select block";
 			}
 			Settings.SwitchChunkBlockMouseButtons = switchMouseButtonsInChunkAndBlockEditorsToolStripMenuItem.Checked;
 		}
@@ -9631,7 +9631,7 @@ namespace SonicRetro.SonLVL.GUI
 
 		private void deleteUnusedTilesToolStripButton_Click(object sender, EventArgs e)
 		{
-			if (MessageBox.Show(this, "这个举动可能会破坏含有此瓷片的关卡, 或者已经设置的物体/画 .\n\n确定要删除所有在块里未使用的瓷片吗？", "删除未使用瓷片", MessageBoxButtons.OKCancel) != DialogResult.OK)
+			if (MessageBox.Show(this, "This action may break other levels that share part of the same tile set, or objects that have their art in this set.\n\nAre you sure you want to delete all tiles not used in blocks?", "Delete Unused Tiles", MessageBoxButtons.OKCancel) != DialogResult.OK)
 				return;
 			bool[] tilesused = new bool[LevelData.Tiles.Count];
 			foreach (Block blk in LevelData.Blocks)
