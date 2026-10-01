@@ -310,6 +310,7 @@ namespace SonicRetro.SonLVL.API
 		}
 
 		public Block Clone()
+
 		{
 			Block result = (Block)MemberwiseClone();
 			result.Tiles = (PatternIndex[,])Tiles.Clone();
