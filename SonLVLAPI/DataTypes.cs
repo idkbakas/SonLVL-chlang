@@ -735,10 +735,10 @@ namespace SonicRetro.SonLVL.API
 		[NonSerialized]
 		private Entry ent;
 		private ushort x, y;
-		[Description("The horizontal component of the position.")]
+		[Description("X点位分量")]
 		[TypeConverter(typeof(UInt16HexConverter))]
 		public ushort X { get { if (ent != null) x = ent.X; return x; } set { x = value; if (ent != null) ent.X = value; } }
-		[Description("The vertical component of the position.")]
+		[Description("Y点位分量.")]
 		[TypeConverter(typeof(UInt16HexConverter))]
 		public ushort Y { get { if (ent != null) y = ent.Y; return y; } set { y = value; if (ent != null) ent.Y = value; } }
 
@@ -868,7 +868,8 @@ namespace SonicRetro.SonLVL.API
 		public int Depth { get; protected set; }
 
 		[Category("Standard")]
-		[Description("The location of the item within the level.")]
+		[DisplayName("位置")]
+		[Description("物体在关卡中的位置.")]
 		public Position Position
 		{
 			get
@@ -886,7 +887,8 @@ namespace SonicRetro.SonLVL.API
 		public ushort Y { get; set; }
 
 		[Category("Standard")]
-		[Description("The hexadecimal representation of the item.")]
+		[DisplayName("数据")]
+		[Description("物品的位址(HEX/16进制).")]
 		public string Data
 		{
 			get
@@ -931,7 +933,7 @@ namespace SonicRetro.SonLVL.API
 		[ReadOnly(true)]
 		[ParenthesizePropertyName(true)]
 		[Category("Meta")]
-		[Description("The name of the item.")]
+		[Description("物品名字")]
 		public abstract string Name { get; }
 
 		public void ResetPos() { pos = new Position(this); }
@@ -956,19 +958,21 @@ namespace SonicRetro.SonLVL.API
 	{
 		[DefaultValue(false)]
 		[Description("Flips the object vertically.")]
-		[DisplayName("Y Flip")]
+		[DisplayName("Y翻转状态")]
 		public virtual bool YFlip { get; set; }
 		[DefaultValue(false)]
 		[Description("Flips the object horizontally.")]
-		[DisplayName("X Flip")]
+		[DisplayName("X翻转状态")]
 		public virtual bool XFlip { get; set; }
 		[DefaultValue(0)]
-		[Description("The ID number of the object.")]
+		[DisplayName("ID")]
+		[Description("物品的ID号.")]
 		[Editor(typeof(IDEditor), typeof(System.Drawing.Design.UITypeEditor))]
 		[TypeConverter(typeof(ByteHexConverter))]
 		public virtual byte ID { get; set; }
 		[DefaultValue(0)]
-		[Description("The subtype of the object.")]
+		[DisplayName("子类型")]
+		[Description("物品的子类.")]
 		[Editor(typeof(SubTypeEditor), typeof(System.Drawing.Design.UITypeEditor))]
 		[TypeConverter(typeof(ByteHexConverter))]
 		public virtual byte SubType { get; set; }
@@ -1108,8 +1112,8 @@ namespace SonicRetro.SonLVL.API
 	public abstract class RememberStateObjectEntry : ObjectEntry
 	{
 		[DefaultValue(false)]
-		[Description("If true, the object will stay destroyed after it leaves the screen.")]
-		[DisplayName("Remember State")]
+		[Description("如果选择True,物品将会在离开屏幕后保持摧毁状态")]
+		[DisplayName("存档状态")]
 		public bool RememberState { get; set; }
 	}
 
