@@ -28,100 +28,100 @@ namespace SonicRetro.SonLVL
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.okButton = new System.Windows.Forms.Button();
-			this.cancelButton = new System.Windows.Forms.Button();
-			this.shiftH = new System.Windows.Forms.RadioButton();
-			this.shiftV = new System.Windows.Forms.RadioButton();
-			this.entireRow = new System.Windows.Forms.RadioButton();
-			this.entireColumn = new System.Windows.Forms.RadioButton();
-			this.SuspendLayout();
-			// 
-			// okButton
-			// 
-			this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-			this.okButton.Location = new System.Drawing.Point(7, 128);
-			this.okButton.Name = "okButton";
-			this.okButton.Size = new System.Drawing.Size(75, 23);
-			this.okButton.TabIndex = 0;
-			this.okButton.Text = "&OK";
-			this.okButton.UseVisualStyleBackColor = true;
-			this.okButton.Click += new System.EventHandler(this.okButton_Click);
-			// 
-			// cancelButton
-			// 
-			this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.cancelButton.Location = new System.Drawing.Point(88, 128);
-			this.cancelButton.Name = "cancelButton";
-			this.cancelButton.Size = new System.Drawing.Size(75, 23);
-			this.cancelButton.TabIndex = 1;
-			this.cancelButton.Text = "&Cancel";
-			this.cancelButton.UseVisualStyleBackColor = true;
-			this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
-			// 
-			// shiftH
-			// 
-			this.shiftH.AutoSize = true;
-			this.shiftH.Checked = true;
-			this.shiftH.Location = new System.Drawing.Point(12, 12);
-			this.shiftH.Name = "shiftH";
-			this.shiftH.Size = new System.Drawing.Size(93, 17);
-			this.shiftH.TabIndex = 2;
-			this.shiftH.TabStop = true;
-			this.shiftH.Text = "Shift cells right";
-			this.shiftH.UseVisualStyleBackColor = true;
-			// 
-			// shiftV
-			// 
-			this.shiftV.AutoSize = true;
-			this.shiftV.Location = new System.Drawing.Point(12, 35);
-			this.shiftV.Name = "shiftV";
-			this.shiftV.Size = new System.Drawing.Size(99, 17);
-			this.shiftV.TabIndex = 3;
-			this.shiftV.Text = "Shift cells down";
-			this.shiftV.UseVisualStyleBackColor = true;
-			// 
-			// entireRow
-			// 
-			this.entireRow.AutoSize = true;
-			this.entireRow.Location = new System.Drawing.Point(12, 73);
-			this.entireRow.Name = "entireRow";
-			this.entireRow.Size = new System.Drawing.Size(72, 17);
-			this.entireRow.TabIndex = 4;
-			this.entireRow.Text = "Entire row";
-			this.entireRow.UseVisualStyleBackColor = true;
-			// 
-			// entireColumn
-			// 
-			this.entireColumn.AutoSize = true;
-			this.entireColumn.Location = new System.Drawing.Point(12, 96);
-			this.entireColumn.Name = "entireColumn";
-			this.entireColumn.Size = new System.Drawing.Size(89, 17);
-			this.entireColumn.TabIndex = 5;
-			this.entireColumn.Text = "Entire column";
-			this.entireColumn.UseVisualStyleBackColor = true;
-			// 
-			// InsertDeleteDialog
-			// 
-			this.AcceptButton = this.okButton;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(175, 163);
-			this.Controls.Add(this.entireColumn);
-			this.Controls.Add(this.entireRow);
-			this.Controls.Add(this.shiftV);
-			this.Controls.Add(this.shiftH);
-			this.Controls.Add(this.cancelButton);
-			this.Controls.Add(this.okButton);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "InsertDeleteDialog";
-			this.ShowIcon = false;
-			this.ShowInTaskbar = false;
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.okButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.shiftH = new System.Windows.Forms.RadioButton();
+            this.shiftV = new System.Windows.Forms.RadioButton();
+            this.entireRow = new System.Windows.Forms.RadioButton();
+            this.entireColumn = new System.Windows.Forms.RadioButton();
+            this.SuspendLayout();
+            // 
+            // okButton
+            // 
+            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.okButton.Location = new System.Drawing.Point(7, 118);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(75, 21);
+            this.okButton.TabIndex = 0;
+            this.okButton.Text = "确定(&O)";
+            this.okButton.UseVisualStyleBackColor = true;
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelButton.Location = new System.Drawing.Point(88, 118);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 21);
+            this.cancelButton.TabIndex = 1;
+            this.cancelButton.Text = "取消(&C)";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+            // 
+            // shiftH
+            // 
+            this.shiftH.AutoSize = true;
+            this.shiftH.Checked = true;
+            this.shiftH.Location = new System.Drawing.Point(12, 11);
+            this.shiftH.Name = "shiftH";
+            this.shiftH.Size = new System.Drawing.Size(83, 16);
+            this.shiftH.TabIndex = 2;
+            this.shiftH.TabStop = true;
+            this.shiftH.Text = "右移单元格";
+            this.shiftH.UseVisualStyleBackColor = true;
+            // 
+            // shiftV
+            // 
+            this.shiftV.AutoSize = true;
+            this.shiftV.Location = new System.Drawing.Point(12, 32);
+            this.shiftV.Name = "shiftV";
+            this.shiftV.Size = new System.Drawing.Size(83, 16);
+            this.shiftV.TabIndex = 3;
+            this.shiftV.Text = "下移单元格";
+            this.shiftV.UseVisualStyleBackColor = true;
+            // 
+            // entireRow
+            // 
+            this.entireRow.AutoSize = true;
+            this.entireRow.Location = new System.Drawing.Point(12, 67);
+            this.entireRow.Name = "entireRow";
+            this.entireRow.Size = new System.Drawing.Size(47, 16);
+            this.entireRow.TabIndex = 4;
+            this.entireRow.Text = "整行";
+            this.entireRow.UseVisualStyleBackColor = true;
+            // 
+            // entireColumn
+            // 
+            this.entireColumn.AutoSize = true;
+            this.entireColumn.Location = new System.Drawing.Point(12, 89);
+            this.entireColumn.Name = "entireColumn";
+            this.entireColumn.Size = new System.Drawing.Size(47, 16);
+            this.entireColumn.TabIndex = 5;
+            this.entireColumn.Text = "整列";
+            this.entireColumn.UseVisualStyleBackColor = true;
+            // 
+            // InsertDeleteDialog
+            // 
+            this.AcceptButton = this.okButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(175, 150);
+            this.Controls.Add(this.entireColumn);
+            this.Controls.Add(this.entireRow);
+            this.Controls.Add(this.shiftV);
+            this.Controls.Add(this.shiftH);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.okButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "InsertDeleteDialog";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 

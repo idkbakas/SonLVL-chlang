@@ -123,12 +123,4 @@
   <metadata name="reportButton.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <data name="label1.Text" xml:space="preserve">
-    <value>It looks like SonPLN had some trouble loading your mappings.
-
-If you believe this is a bug in SonPLN, you can submit a Report.
-If you made a mistake or want to do something else, you can Cancel.
-
-The error reported was: </value>
-  </data>
 </root>
