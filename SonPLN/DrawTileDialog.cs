@@ -127,6 +127,11 @@ namespace SonicRetro.SonLVL.SonPLN
 			TilePicture.Cursor = fillcur;
 		}
 
+		private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+		{
+
+		}
+
 		enum Tool { Pencil, Fill }
 	}
 }
